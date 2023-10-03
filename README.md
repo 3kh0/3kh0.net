@@ -10,14 +10,14 @@
 <small><i><a href='http://github.com/3kh0/readme-toc/'>Table of contents generated with readme-toc</a></i></small>
 
 
-My portfolio, now with Vite! In my last version, I learned how to use Tailwind, but I was just using the CDN, that makes loading times slower. This time I'm using Vite to build the project, which allows me to make the site fast and Tailwind to only use the styles it needs.
+My portfolio is now made with Vite! In my last version, I learned how to use Tailwind, but I was using the CDN, which makes loading times slower. I'm using Vite to build the project this time, which allows me to make the site fast, and Tailwind will only load the style it needs.
 
-Here is the [old version](https://github.com/3kh0/portfolio-v2) if you would like to see how bad it was.
+Here is the [old version](https://github.com/3kh0/portfolio-v2) if you want to see how bad it was.
 
 ## Features
 
 - Fast loading times.
-- Responsive, to a extent.
+- Responsive, to an extent.
 - Made with [Vite](https://vitejs.dev/).
 - Styles by [Tailwind](https://tailwindcss.com/).
 
