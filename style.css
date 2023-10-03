@@ -1,0 +1,40 @@
+/* Import Tailwind CSS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles would go below */
+
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 24, 39, 1);
+}
+
+.animate-spin {
+  animation: spin 0.75s linear infinite;
+  border-width: 7px;
+  border-color: rgb(34, 197, 94) transparent rgb(34, 197, 94) transparent;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
