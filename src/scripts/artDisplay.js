@@ -1,9 +1,12 @@
-let artData;
-let currentArtIndex = 0;
+let artData = [
+  {
+    image: "img/art/Echosketch.png",
+    artist: "Comission from sachiyako on discord",
+    description: "I love it so much, the details are amazing, and the colors are perfect!",
+  },
+];
 
-function epicFunction() {
-  console.log("wow it works!")
-}
+let currentArtIndex = 0;
 
 // update art display
 export function updateArtDisplay() {
@@ -14,18 +17,9 @@ export function updateArtDisplay() {
   document.getElementById("art-description").textContent = art.description;
 }
 
-// get json file
-export async function fetchArtData() {
-  try {
-    const response = await fetch("/static/data/art.json");
-    if (!response.ok) {
-      throw new Error("Error! Fix it pls ");
-    }
-    artData = await response.json();
-    updateArtDisplay();
-  } catch (error) {
-    console.error("Error! Fix it pls ", error);
-  }
+// get art data
+export function fetchArtData() {
+  updateArtDisplay();
 }
 
 // listen to button
