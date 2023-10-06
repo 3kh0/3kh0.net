@@ -17,7 +17,7 @@ export function updateArtDisplay() {
 // get json file
 export async function fetchArtData() {
   try {
-    const response = await fetch("/src/data/art.json");
+    const response = await fetch("/static/data/art.json");
     if (!response.ok) {
       throw new Error("Error! Fix it pls ");
     }
