@@ -4,5 +4,6 @@ export default {
     base: '/',
     minify: 'esbuild',
     cssMinify: 'lightningcss',
+    sourcemap: 'inline',
   },
 };
