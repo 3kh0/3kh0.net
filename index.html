@@ -2,8 +2,8 @@
 <html>
   <head>
     <!-- get the fun spinner up so it looks like we are doing something -->
-    <script>window.addEventListener('load', function () {const loader = document.getElementById('loader');if (loader) {loader.style.display = 'none';}});</script>
-    
+    <script>const startTime = performance.now();window.addEventListener("load", function () {const loader = document.getElementById("loader");loader.style.display = "none";const endTime = performance.now();const elapsedTime = endTime - startTime;console.log(`Page loaded in ${elapsedTime.toFixed(2)} ms`);});</script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Echo's personal site</title>
@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="icon" href="/img/3kh0.png" />
     <link rel="shortcut icon" href="/img/3kh0.png" />
-    
+
     <!-- base meta tags -->
     <meta name="description" content="Echo's personal site with my projects and blog. Showcasing programming, hacking, and more" />
     <meta name="keywords" content="Echo, personal site, programming, hacking, kitsune" />
     <meta name="author" content="Echo" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#1a202c" />
-    
+
     <!-- open graph meta tags -->
     <meta property="og:title" content="3kh0.net" />
     <meta property="og:description" content="Echo's personal site with my projects and blog. Showcasing programming, hacking, and more" />
@@ -127,7 +127,7 @@
       <h2 class="text-3xl mb-4 text-left">Cool Art</h2>
       <div id="art-container" class="max-w-2xl mx-auto">
         <a id="art-link" href="#" target="_blank" referrerpolicy="no-referrer">
-          <img id="art-image" class="max-w-md mx-auto mb-4 rounded-lg" alt="Artwork" loading="lazy"/>
+          <img id="art-image" class="max-w-md mx-auto mb-4 rounded-lg" alt="Artwork" loading="lazy" />
         </a>
         <p id="artist-name" class="text-lg font-semibold"></p>
         <p id="art-description" class="text-sm"></p>
@@ -161,8 +161,9 @@
       <p class="text-center text-m">Made by 3kh0, built using Vite and Tailwind</p>
     </section>
     <div
-    id="ftf-dma-note"
-      class="ftf-dma-note d-none ad native-ad native-ad-1 ytd-j yxd-j yxd-jd aff-content-col aff-inner-col aff-item-list ark-ad-message inplayer-ad inplayer_banners in_stream_banner trafficjunky-float-right dbanner preroll-blocker happy-inside-player blocker-notice blocker-overlay exo-horizontal ave-pl bottom-hor-block brs-block advboxemb wgAdBlockMessage glx-watermark-container overlay-advertising-new header-menu-bottom-ads rkads mdp-deblocker-wrapper amp-ad-inner imggif bloc-pub bloc-pub2 hor_banner aan_fake aan_fake__video-units rps_player_ads fints-block__row full-ave-pl full-bns-block vertbars video-brs player-bns-block wps-player__happy-inside gallery-bns-bl stream-item-widget adsbyrunactive happy-under-player adde_modal_detector adde_modal-overlay ninja-recommend-block aoa_overlay message ftf-dma-note fixed bottom-4 left-4 right-4 bg-red-900 text-white p-4 text-left rounded-lg shadow-lg z-40">
+      id="ftf-dma-note"
+      class="ftf-dma-note d-none ad native-ad native-ad-1 ytd-j yxd-j yxd-jd aff-content-col aff-inner-col aff-item-list ark-ad-message inplayer-ad inplayer_banners in_stream_banner trafficjunky-float-right dbanner preroll-blocker happy-inside-player blocker-notice blocker-overlay exo-horizontal ave-pl bottom-hor-block brs-block advboxemb wgAdBlockMessage glx-watermark-container overlay-advertising-new header-menu-bottom-ads rkads mdp-deblocker-wrapper amp-ad-inner imggif bloc-pub bloc-pub2 hor_banner aan_fake aan_fake__video-units rps_player_ads fints-block__row full-ave-pl full-bns-block vertbars video-brs player-bns-block wps-player__happy-inside gallery-bns-bl stream-item-widget adsbyrunactive happy-under-player adde_modal_detector adde_modal-overlay ninja-recommend-block aoa_overlay message ftf-dma-note fixed bottom-4 left-4 right-4 bg-red-900 text-white p-4 text-left rounded-lg shadow-lg z-40"
+    >
       <span id="ftf-dma-close-btn" class="ftf-dma-close-btn bg-red-700 p-1 px-2 rounded-md absolute top-2 right-2 cursor-pointer text-gray-100 hover:bg-red-800 transition duration-300 hover:text-gray-300">
         I understand the risks
       </span>
