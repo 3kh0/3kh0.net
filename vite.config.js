@@ -1,3 +1,5 @@
+import { ViteMinifyPlugin } from 'vite-plugin-minify'
+
 export default {
   build: {
     outDir: 'dist',
@@ -6,4 +8,7 @@ export default {
     cssMinify: 'lightningcss',
     sourcemap: 'inline',
   },
+  plugins: [
+    ViteMinifyPlugin(),
+  ],
 };
