@@ -2,14 +2,23 @@
 <html>
   <head>
     <!-- get the fun spinner up so it looks like we are doing something -->
-    <script>const startTime = performance.now();window.addEventListener("load", function () {const loader = document.getElementById("loader");loader.style.display = "none";const endTime = performance.now();const elapsedTime = endTime - startTime;console.log(`Page loaded in ${elapsedTime.toFixed(2)} ms`);});</script>
+    <script>
+      const startTime = performance.now();
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        loader.style.display = "none";
+        const endTime = performance.now();
+        const elapsedTime = endTime - startTime;
+        console.log(`Page loaded in ${elapsedTime.toFixed(2)} ms`);
+      });
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Echo's personal site</title>
 
     <!-- get some stuff loaded -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
     <link rel="icon" href="/img/3kh0.png" />
     <link rel="shortcut icon" href="/img/3kh0.png" />
 
