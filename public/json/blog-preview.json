@@ -1,17 +1,17 @@
 {
   "1": {
-    "title": "Blog Post Title 1",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, elit vel bibendum bibendum, velit sapien bibendum sapien, vel bibendum sapien sapien vel sapien.",
-    "link": "#"
+    "title": "Yo hello!",
+    "description": "Yeah the blog system is still not up and running, but I'm working on it. I'm also working on a few other things, so stay tuned!",
+    "link": ""
   },
   "2": {
-    "title": "Coming out",
-    "description": "Due to the nature of this topic, a quick description will do no justice. Please click the link to read more.",
-    "link": "#"
+    "title": "So yeah, this is not complete",
+    "description": "These fancy blue buttons also do not work yet.",
+    "link": ""
   },
   "3": {
     "title": "Blog Post Title 3",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "link": "#"
+    "description": "They do not do anything even if you click on them, but what if they did...",
+    "link": ""
   }
 }
