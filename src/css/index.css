@@ -1,10 +1,4 @@
-/* Import Tailwind CSS */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom Styles would go below */
+/* Custom styles for the main page */
 
 #loader {
   display: flex;
