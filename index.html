@@ -90,37 +90,37 @@
       <h2 class="text-3xl mb-4">Cool stuff I made</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <a referrerpolicy="no-referrer" href="https://github.com/3kh0/website-v4/">
-          <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
+          <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">3kh0 website</h3>
             <p class="text-sm">Vastly popular website with games</p>
           </div>
         </a>
         <a referrerpolicy="no-referrer" href="https://github.com/3kh0/ChessSword">
-          <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
+          <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Chess Sword</h3>
             <p class="text-sm">Chess bot to highlight the best moves</p>
           </div>
         </a>
         <a referrerpolicy="no-referrer" href="https://github.com/3kh0/3kh0-Assets">
-          <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
+          <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">3kh0 Assets</h3>
             <p class="text-sm">Tons of game files for free use</p>
           </div>
         </a>
         <a referrerpolicy="no-referrer" href="https://github.com/3kh0/soundboard">
-          <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
+          <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Soundboard</h3>
             <p class="text-sm">Simple online soundboard app</p>
           </div>
         </a>
         <a referrerpolicy="no-referrer" href="https://github.com/3kh0/gamejamsnake">
-          <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
+          <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Arcade Snake</h3>
             <p class="text-sm">Simple version of snake for the web</p>
           </div>
         </a>
         <a referrerpolicy="no-referrer" href="https://github.com/3kh0/echodown">
-          <div class="bg-gray-700 p-4 rounded-xl hover:bg-gray-800 transition duration-300">
+          <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">Echo Down</h3>
             <p class="text-sm">A fake DDoS/Network stresser</p>
           </div>
@@ -130,19 +130,22 @@
     <!-- blog -->
     <section class="max-w-6xl mx-auto py-8 px-8">
       <h2 class="text-3xl mb-4">Blog Posts</h2>
-      <p class="text-center text-lg">This is coming soon, so stay tuned! I promise I will work on this.</p>
+      <div id="blog-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      </div>
+      <!-- Blog loader -->
+      <script src="/src/scripts/blog/indexblog.js"></script>
     </section>
     <!-- art -->
     <section class="max-w-6xl mx-auto py-8 px-8 text-center">
       <h2 class="text-3xl mb-4 text-left">Cool Art</h2>
       <div id="art-container" class="max-w-2xl mx-auto">
         <a id="art-link" href="#" target="_blank" referrerpolicy="no-referrer">
-          <img id="art-image" class="max-w-md mx-auto mb-4 rounded-lg" alt="Artwork" loading="eager" />
+          <img id="art-image" class="max-w-md mx-auto mb-4 rounded-lg shadow-lg" alt="Artwork" loading="eager" />
         </a>
         <p id="artist-name" class="text-lg font-semibold"></p>
         <p id="art-description" class="text-sm"></p>
         <div class="mt-4">
-          <button id="next-button" class="bg-blue-500 text-white py-2 px-4 w-32 rounded-xl hover:bg-blue-600 transition duration-300">Next</button>
+          <button id="next-button" class="bg-blue-500 shadow-lg text-white py-2 px-4 w-32 rounded-xl hover:bg-blue-600 transition duration-300">Next</button>
         </div>
       </div>
     </section>
@@ -152,17 +155,17 @@
       <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
         <div>
           <a href="mailto:echo-the-coder@tuta.io">
-            <button class="bg-green-500 text-white py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full">Email</button>
+            <button class="bg-green-500 text-white shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full">Email</button>
           </a>
         </div>
         <div>
           <a referrerpolicy="no-referrer" href="https://discord.com/users/1056383394470182922">
-            <button class="bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full">Discord</button>
+            <button class="bg-blue-600 text-white shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full">Discord</button>
           </a>
         </div>
         <div>
           <a rel="me" href="https://defcon.social/@3kh0">
-            <button class="bg-purple-500 text-white py-2 px-4 rounded-xl hover:bg-purple-600 transition duration-300 w-full">Mastodon</button>
+            <button class="bg-purple-500 text-white shadow-lg py-2 px-4 rounded-xl hover:bg-purple-600 transition duration-300 w-full">Mastodon</button>
           </a>
         </div>
       </div>
