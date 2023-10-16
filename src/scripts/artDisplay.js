@@ -1,6 +1,6 @@
 let artData = [
   {
-    image: "img/art/Echosketch.png",
+    image: "img/art/Echosketch.webp",
     artist: "Comission from sachiyako on discord",
     description: "I love it so much, the details are amazing, and the colors are perfect!",
   },
