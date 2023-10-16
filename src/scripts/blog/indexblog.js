@@ -6,7 +6,7 @@ fetch("/json/blog-preview.json")
     const blogPostsContainer = document.querySelector("#blog-container");
     Object.values(data).forEach((blogPost) => {
       const blogPostElement = document.createElement("div");
-      blogPostElement.classList.add("max-w-2xl", "mx-auto", "bg-gray-700", "rounded-lg", "shadow-lg", "overflow-hidden", "my-4");
+      blogPostElement.classList.add("max-w-2xl", "mx-auto", "bg-gray-700", "rounded-xl", "shadow-lg", "overflow-hidden", "my-4");
       blogPostElement.innerHTML = `
       <div class="p-6">
         <h3 class="text-xl font-semibold mb-2 text-white">${blogPost.title}</h3>
