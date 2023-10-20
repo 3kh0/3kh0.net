@@ -5,6 +5,7 @@
     "kasm",
     "snake",
     "soundboard",
-    "toc"
+    "toc",
+    "cosmosproxy"
   ]
 }
