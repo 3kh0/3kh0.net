@@ -1,4 +1,4 @@
-// Runs on home page only
+// Blog previews
 
 fetch("/json/blog-preview.json")
   .then((response) => response.json())
