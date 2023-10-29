@@ -1,4 +1,4 @@
-// This code will run on every page
+// This code will run on every page, if there were more pages...
 
 console.log(
     `%c
