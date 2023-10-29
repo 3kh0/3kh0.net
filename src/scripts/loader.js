@@ -133,6 +133,5 @@ if (window.location.hostname !== 'localhost') {
   script.async = true;
   script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588';
   script.crossOrigin = 'anonymous';
-
   document.body.appendChild(script);
 }
