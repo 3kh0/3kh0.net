@@ -1,3 +1,5 @@
+// This loads stuff into the main page, it makes it do the thing
+
 document.querySelector('#intro').innerHTML = `
 <div class="max-w-6xl mx-auto py-8 px-8">
   <div class="flex sm:flex-col md:flex-row items-center">
@@ -12,13 +14,7 @@ document.querySelector('#intro').innerHTML = `
       </div>
     </div>
   </div>
-</div>
-`;
-
-// document.querySelector('#intro').innerHTML = `
-// <p>hi</p>
-// `;
-
+</div>`;
 
 document.querySelector('#projects').innerHTML = `
 <section class="max-w-6xl mx-auto py-8 px-8">
@@ -61,8 +57,7 @@ document.querySelector('#projects').innerHTML = `
       </div>
     </a>
   </div>
-</section>
-`;
+</section>`;
 
 document.querySelector('#art').innerHTML = `
 <section class="max-w-6xl mx-auto py-8 px-8 text-center">
@@ -77,8 +72,7 @@ document.querySelector('#art').innerHTML = `
       <button id="next-button" class="bg-blue-500 shadow-lg text-white py-2 px-4 w-32 rounded-xl hover:bg-blue-600 transition duration-300">Next</button>
     </div>
   </div>
-</section>
-`;
+</section>`;
 
 document.querySelector('#contact').innerHTML = `
 <section class="max-w-6xl mx-auto py-8 px-8">
@@ -100,14 +94,12 @@ document.querySelector('#contact').innerHTML = `
       </a>
     </div>
   </div>
-</section>
-`;
+</section>`;
 
 document.querySelector('#footer').innerHTML = `
 <section class="max-w-6xl mx-auto py-8 px-8">
   <p class="text-center text-m">Made by 3kh0, built using Vite and Tailwind</p>
-</section>
-`;
+</section>`;
 
 document.querySelector('#adblockNotice').innerHTML = `
 <div
@@ -125,8 +117,7 @@ document.querySelector('#adblockNotice').innerHTML = `
       that blocks ads and other malicious scripts in your browser to protect your privacy and security. If you already have one, good on you. :D
     </p>
   </div>
-</div>
-`;
+</div>`;
 
 if (window.location.hostname !== 'localhost') {
   var script = document.createElement('script');
