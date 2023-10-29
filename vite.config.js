@@ -6,7 +6,7 @@ export default {
     base: '/',
     minify: 'esbuild',
     cssMinify: 'lightningcss',
-    sourcemap: 'inline',
+    sourcemap: 'true',
   },
   plugins: [
     ViteMinifyPlugin(),
