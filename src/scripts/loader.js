@@ -1,3 +1,5 @@
+// This loads stuff into the main page, it makes it do the thing
+
 document.querySelector('#intro').innerHTML = `
 <div class="max-w-6xl mx-auto py-8 px-8">
   <div class="flex sm:flex-col md:flex-row items-center">
