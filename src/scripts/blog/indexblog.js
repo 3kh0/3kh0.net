@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
               const blogContentContainer = document.getElementById("blog-content");
               blogContentContainer.innerHTML = `
               <div id="blog-content" class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-70">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-xl w-fill h-5/6 max-w-4xl relative overflow-y-auto">
+                <div class="bg-gray-900 p-6 rounded-xl shadow-xl w-fill h-5/6 max-w-4xl relative overflow-y-auto">
                   <h3 class="text-xl font-semibold mb-2 text-white">${blogPost.title}</h3>
                   <div class="text-gray-100 p-3 text-base">
                     ${blogPost.content}
                   </div>
-                  <button id="close-blog-popup" class="absolute top-4 right-4 text-white bg-red-500 hover:bg-red-600 transition duration-300 rounded-full text-xl cursor-pointer w-10 h-10 flex items-center justify-center">&times;</button>
+                  <button id="close-blog-popup" class="absolute top-2 right-2 rounded-xl text-white bg-red-500 hover:bg-red-600 transition duration-300 cursor-pointer w-10 h-10 flex items-center justify-center">&times;</button>
                 </div>
               </div>`;
               blogContentContainer.style.display = "block";
