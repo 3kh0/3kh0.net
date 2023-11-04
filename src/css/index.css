@@ -1,4 +1,4 @@
-/* Custom styles for the main page */
+/* Custom styles for the main page, this is needed because we need to show the user something before everything else loads */
 
 #loader {
   display: flex;
