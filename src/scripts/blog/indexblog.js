@@ -1,3 +1,4 @@
+// src/scripts/blog/indexblog.js
 // Blog previews
 
 fetch("/json/blog-preview.json")

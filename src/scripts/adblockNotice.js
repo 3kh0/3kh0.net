@@ -1,3 +1,4 @@
+// src/scripts/adblockNotice.js
 // Idea source:
 // https://stefanbohacek.com/project/detect-missing-adblocker-wordpress-plugin/
 

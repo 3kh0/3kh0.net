@@ -1,3 +1,4 @@
+// src/scripts/loader.js
 // This loads stuff into the main page, it makes it do the thing
 
 document.querySelector('#intro').innerHTML = `

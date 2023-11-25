@@ -1,3 +1,4 @@
+// src/scripts/artDisplay.js
 let artData = [
   {
     image: "img/art/Echosketch.webp",
