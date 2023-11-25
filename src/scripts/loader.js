@@ -76,7 +76,7 @@ document.querySelector('#art').innerHTML = `
 
 document.querySelector('#contact').innerHTML = `
 <section class="max-w-6xl mx-auto py-8 px-8">
-  <h2 class="text-3xl mb-4">Contact Me</h2>
+  <h2 class="text-3xl mb-4">Connect with me</h2>
   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
     <div>
       <a href="mailto:echo-the-coder@tuta.io">
