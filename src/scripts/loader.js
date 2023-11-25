@@ -1,6 +1,14 @@
 // src/scripts/loader.js
 // This loads stuff into the main page, it makes it do the thing
 
+document.querySelector('#header').innerHTML = `
+<header class="py-4 px-8 flex justify-between items-center max-w-6xl mx-auto">
+  <div>
+    <h1 class="text-7xl font-bold text-green-500 text-center py-1">3kh0</h1>
+    <p class="text-sm">Programmer, Hacker, Kitsune</p>
+  </div>
+</header>`;
+
 document.querySelector('#intro').innerHTML = `
 <div class="max-w-6xl mx-auto py-8 px-8">
   <div class="flex sm:flex-col md:flex-row items-center">
