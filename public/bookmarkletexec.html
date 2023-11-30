@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Bookmarklet Executor</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&amp;display=swap">
-<style>
-body {
-color: white;
-background-color: #2e2e31;
-font-family: "Open Sans";
-user-select: none;
-}
-a {
-color: skyblue;
-}
-button {
-padding: 8px 10px;
-color: white;
-background-color: #0F52BA;
-padding: 13px 50px;
-margin: 20 5px 5px 0;
-border: none;
-border-radius: 10px;
-font-family: "Open Sans";
-font-size: 20px;
-cursor: pointer;
-transition: filter 250ms;
-}
-button:hover {
-filter: brightness(85%);
-}
-textarea {
-width: 50%;
-height: 250px;
-padding: 10px;
-color: white;
-background-color: #2b2b2e;
-border-radius: 10px;
-}
-</style>
-</head>
-<body>
-<center>
-<h1>Bookmarklet Executor</h1>
-<textarea autofocus spellcheck="false" placeholder="javascript:"></textarea>
-<p>
-<button onclick="run();">Run</button>
-<p>
-This DNS is provided by <a href="https://github.com/AshtonDavies" target="_blank">Ashton Davies</a>.
-<p>
-This page is hosted by <a href="https://github.com/3kh0" target="_blank">3kh0</a>, the owner of the <a href="https://github.com/3kh0/ext-remover" target="_blank">ext-remover</a> repository.
-</center>
-<script>
-function run() {
-return eval(document.querySelector("textarea").value);
-}
-</script>
-</body>
+  <head>
+    <title>Bookmarklet Executor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&amp;display=swap" />
+    <style>
+      body {
+        color: white;
+        background-color: #2e2e31;
+        font-family: "Open Sans";
+        user-select: none;
+      }
+      a {
+        color: skyblue;
+      }
+      button {
+        padding: 8px 10px;
+        color: white;
+        background-color: #0f52ba;
+        padding: 13px 50px;
+        margin: 20 5px 5px 0;
+        border: none;
+        border-radius: 10px;
+        font-family: "Open Sans";
+        font-size: 20px;
+        cursor: pointer;
+        transition: filter 250ms;
+      }
+      button:hover {
+        filter: brightness(85%);
+      }
+      textarea {
+        width: 50%;
+        height: 250px;
+        padding: 10px;
+        color: white;
+        background-color: #2b2b2e;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Bookmarklet Executor</h1>
+      <textarea autofocus spellcheck="false" placeholder="javascript:"></textarea>
+      <p>
+        <button onclick="run();">Run</button>
+      </p>
+
+      <p>This DNS is provided by <a href="https://github.com/AshtonDavies" target="_blank">Ashton Davies</a>.</p>
+
+      <p>This page is hosted by <a href="https://github.com/3kh0" target="_blank">3kh0</a>, the owner of the <a href="https://github.com/3kh0/ext-remover" target="_blank">ext-remover</a> repository.</p>
+    </center>
+    <script>
+      function run() {
+        return eval(document.querySelector("textarea").value);
+      }
+    </script>
+  </body>
 </html>
