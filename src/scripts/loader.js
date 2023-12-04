@@ -86,24 +86,50 @@ document.querySelector('#art').innerHTML = `
 document.querySelector('#contact').innerHTML = `
 <section class="max-w-6xl mx-auto py-8 px-8">
   <h2 class="text-3xl mb-4">Connect with me</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
+  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
     <div>
       <a href="mailto:echo-the-coder@tuta.io">
-        <button class="bg-green-500 text-white shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full">Email</button>
+        <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-envelope fa-lg"></i> Email</button>
       </a>
     </div>
     <div>
       <a referrerpolicy="no-referrer" href="https://discord.com/users/1056383394470182922">
-        <button class="bg-blue-600 text-white shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full">Discord</button>
+        <button class="bg-blue-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full"><i class="fab fa-discord fa-lg"></i> Discord</button>
+      </a>
+    </div>
+    <div>
+      <a referrerpolicy="no-referrer" href="https://steamcommunity.com/id/3kh0_">
+        <button class="bg-black text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-gray-800 transition duration-300 w-full"><i class="fab fa-steam fa-lg"></i> Steam</button>
       </a>
     </div>
     <div>
       <a rel="me" href="https://defcon.social/@3kh0">
-        <button class="bg-purple-500 text-white shadow-lg py-2 px-4 rounded-xl hover:bg-purple-600 transition duration-300 w-full">Mastodon</button>
+        <button class="bg-purple-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-purple-600 transition duration-300 w-full"><i class="fab fa-mastodon fa-lg"></i> Mastodon</button>
+      </a>
+    </div>
+    <div>
+      <a referrerpolicy="no-referrer" href="https://github.com/3kh0">
+        <button class="bg-black text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-gray-800 transition duration-300 w-full"><i class="fab fa-github fa-lg"></i> GitHub</button>
+      </a>
+    </div>
+    <div>
+      <a referrerpolicy="no-referrer" href="https://odysee.com/@3kh0:a">
+        <button class="bg-red-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-red-700 transition duration-300 w-full"><i class="fa-brands fa-odysee fa-lg"></i> Odysee</button>
+      </a>
+    </div>
+    <div>
+      <a referrerpolicy="no-referrer" href="https://t.me/echoontop">
+        <button class="bg-blue-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full"><i class="fab fa-telegram fa-lg"></i> Telegram</button>
+      </a>
+    </div>
+    <div>
+      <a referrerpolicy="no-referrer" href="https://www.last.fm/user/realecho">
+        <button class="bg-red-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-red-700 transition duration-300 w-full"><i class="fab fa-lastfm fa-lg"></i> Last.fm</button>
       </a>
     </div>
   </div>
-</section>`;
+</section>
+`;
 
 document.querySelector('#footer').innerHTML = `
 <section class="max-w-6xl mx-auto py-8 px-8">
