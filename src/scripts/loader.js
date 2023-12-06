@@ -72,8 +72,8 @@ document.querySelector('#art').innerHTML = `
 <section class="max-w-6xl mx-auto py-8 px-8 text-center">
   <h2 class="text-3xl mb-4 text-left">Cool Art</h2>
   <div id="art-container" class="max-w-2xl mx-auto">
-    <a id="art-link" href="#" target="_blank" referrerpolicy="no-referrer">
-      <img id="art-image" class="max-w-md mx-auto mb-4 rounded-lg shadow-lg" alt="Artwork" loading="eager" />
+    <a id="art-link" href="#" target="_blank" title="Loading..." referrerpolicy="no-referrer">
+      <img id="art-image" class="w-[32rem] h-[32rem] mx-auto mb-4 rounded-lg shadow-lg" alt="Artwork" loading="eager" />
     </a>
     <p id="artist-name" class="text-lg font-semibold"></p>
     <p id="art-description" class="text-sm"></p>
