@@ -14,7 +14,7 @@ document.querySelector('#intro').innerHTML = `
   <div class="flex sm:flex-col md:flex-row items-center">
     <div class="w-1/2 py-6">
       <p class="text-3xl sm:text-base md:text-2xl lg:text-3xl xl:text-4xl text-center align-middle leading-8">
-        Hi, my name is Drake! I coded a few minor things. I play video games and hack in my free time.
+        Hi, my name is Drake! I am a front-end developer learning backend. I play video games and program with my free time.
       </p>
     </div>
     <div class="w-1/3 mx-10 flex items-center justify-center">
