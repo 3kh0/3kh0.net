@@ -1,142 +1,7 @@
-// src/scripts/loader.js
+// /src/scripts/loader.js
 // This loads stuff into the main page, it makes it do the thing
 
-document.querySelector('#header').innerHTML = `
-<header class="py-4 px-8 flex justify-between items-center max-w-6xl mx-auto">
-  <div>
-    <h1 class="text-7xl font-bold text-green-500 text-center py-1">3kh0</h1>
-    <p class="text-sm">Programmer, Hacker, Kitsune</p>
-  </div>
-</header>`;
-
-document.querySelector('#intro').innerHTML = `
-<div class="max-w-6xl mx-auto py-8 px-8">
-  <div class="flex sm:flex-col md:flex-row items-center">
-    <div class="w-1/2 py-6">
-      <p class="text-3xl sm:text-base md:text-2xl lg:text-3xl xl:text-4xl text-center align-middle leading-8">
-        Hi, my name is Drake! I am a front-end developer learning backend. I play video games and program with my free time.
-      </p>
-    </div>
-    <div class="w-1/3 mx-10 flex items-center justify-center">
-      <div>
-        <img loading="eager" src="/img/art/cutout2echo.webp" alt="fox" class="w-full h-auto rounded-3xl" />
-      </div>
-    </div>
-  </div>
-</div>`;
-
-document.querySelector('#projects').innerHTML = `
-<section class="max-w-6xl mx-auto py-8 px-8">
-  <h2 class="text-3xl mb-4">Cool stuff I made</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <a referrerpolicy="no-referrer" href="https://github.com/3kh0/website-v4/">
-      <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
-        <h3 class="text-xl font-semibold mb-2">3kh0 website</h3>
-        <p class="text-sm">Vastly popular website with games</p>
-      </div>
-    </a>
-    <a referrerpolicy="no-referrer" href="https://github.com/3kh0/ChessSword">
-      <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
-        <h3 class="text-xl font-semibold mb-2">Chess Sword</h3>
-        <p class="text-sm">Chess bot to highlight the best moves</p>
-      </div>
-    </a>
-    <a referrerpolicy="no-referrer" href="https://github.com/3kh0/3kh0-Assets">
-      <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
-        <h3 class="text-xl font-semibold mb-2">3kh0 Assets</h3>
-        <p class="text-sm">Tons of game files for free use</p>
-      </div>
-    </a>
-    <a referrerpolicy="no-referrer" href="https://github.com/3kh0/soundboard">
-      <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
-        <h3 class="text-xl font-semibold mb-2">Soundboard</h3>
-        <p class="text-sm">Simple online soundboard app</p>
-      </div>
-    </a>
-    <a referrerpolicy="no-referrer" href="https://github.com/3kh0/gamejamsnake">
-      <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
-        <h3 class="text-xl font-semibold mb-2">Arcade Snake</h3>
-        <p class="text-sm">Simple version of snake for the web</p>
-      </div>
-    </a>
-    <a referrerpolicy="no-referrer" href="https://github.com/3kh0/echodown">
-      <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
-        <h3 class="text-xl font-semibold mb-2">Echo Down</h3>
-        <p class="text-sm">A fake DDoS/Network stresser</p>
-      </div>
-    </a>
-  </div>
-</section>`;
-
-document.querySelector('#art').innerHTML = `
-<section class="max-w-6xl mx-auto py-8 px-8 text-center">
-  <h2 class="text-3xl mb-4 text-left">Cool Art</h2>
-  <div id="art-container" class="max-w-2xl mx-auto">
-    <a id="art-link" href="#" target="_blank" title="Loading..." referrerpolicy="no-referrer">
-      <img id="art-image" class="w-[32rem] h-[32rem] mx-auto mb-4 rounded-lg shadow-lg" alt="Artwork" loading="eager" />
-    </a>
-    <p id="artist-name" class="text-lg font-semibold"></p>
-    <p id="art-description" class="text-sm"></p>
-    <div class="mt-4">
-      <button id="next-button" class="bg-blue-500 shadow-lg text-white py-2 px-4 w-32 rounded-xl hover:bg-blue-600 transition duration-300">Next</button>
-    </div>
-  </div>
-</section>`;
-
-document.querySelector('#contact').innerHTML = `
-<section class="max-w-6xl mx-auto py-8 px-8">
-  <h2 class="text-3xl mb-4">Connect with me</h2>
-  <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-    <div>
-      <a href="mailto:echo-the-coder@tuta.io">
-        <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-envelope fa-lg"></i> Email</button>
-      </a>
-    </div>
-    <div>
-      <a referrerpolicy="no-referrer" href="https://discord.com/users/1056383394470182922">
-        <button class="bg-blue-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full"><i class="fab fa-discord fa-lg"></i> Discord</button>
-      </a>
-    </div>
-    <div>
-      <a referrerpolicy="no-referrer" href="https://steamcommunity.com/id/3kh0_">
-        <button class="bg-black text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-gray-800 transition duration-300 w-full"><i class="fab fa-steam fa-lg"></i> Steam</button>
-      </a>
-    </div>
-    <div>
-      <a rel="me" href="https://defcon.social/@3kh0">
-        <button class="bg-purple-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-purple-600 transition duration-300 w-full"><i class="fab fa-mastodon fa-lg"></i> Mastodon</button>
-      </a>
-    </div>
-    <div>
-      <a referrerpolicy="no-referrer" href="https://github.com/3kh0">
-        <button class="bg-black text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-gray-800 transition duration-300 w-full"><i class="fab fa-github fa-lg"></i> GitHub</button>
-      </a>
-    </div>
-    <div>
-      <a referrerpolicy="no-referrer" href="https://odysee.com/@3kh0:a">
-        <button class="bg-red-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-red-700 transition duration-300 w-full"><i class="fa-brands fa-odysee fa-lg"></i> Odysee</button>
-      </a>
-    </div>
-    <div>
-      <a referrerpolicy="no-referrer" href="https://t.me/echoontop">
-        <button class="bg-blue-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full"><i class="fab fa-telegram fa-lg"></i> Telegram</button>
-      </a>
-    </div>
-    <div>
-      <a referrerpolicy="no-referrer" href="https://www.last.fm/user/realecho">
-        <button class="bg-red-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-red-700 transition duration-300 w-full"><i class="fab fa-lastfm fa-lg"></i> Last.fm</button>
-      </a>
-    </div>
-  </div>
-</section>
-`;
-
-document.querySelector('#footer').innerHTML = `
-<section class="max-w-6xl mx-auto py-8 px-8">
-  <p class="text-center text-m">Made by 3kh0, built using Vite and Tailwind</p>
-</section>`;
-
-document.querySelector('#adblockNotice').innerHTML = `
+document.querySelector('#nothingSusHere').innerHTML = `
 <div
   id="ftf-dma-note"
   class="ftf-dma-note d-none ad native-ad native-ad-1 ytd-j yxd-j yxd-jd aff-content-col aff-inner-col aff-item-list ark-ad-message inplayer-ad inplayer_banners in_stream_banner trafficjunky-float-right dbanner preroll-blocker happy-inside-player blocker-notice blocker-overlay exo-horizontal ave-pl bottom-hor-block brs-block advboxemb wgAdBlockMessage glx-watermark-container overlay-advertising-new header-menu-bottom-ads rkads mdp-deblocker-wrapper amp-ad-inner imggif bloc-pub bloc-pub2 hor_banner aan_fake aan_fake__video-units rps_player_ads fints-block__row full-ave-pl full-bns-block vertbars video-brs player-bns-block wps-player__happy-inside gallery-bns-bl stream-item-widget adsbyrunactive happy-under-player adde_modal_detector adde_modal-overlay ninja-recommend-block aoa_overlay message ftf-dma-note fixed bottom-4 left-4 right-4 bg-red-900 text-white p-4 text-left rounded-lg shadow-lg z-40"
@@ -161,3 +26,33 @@ if (window.location.hostname !== 'localhost') {
   script.crossOrigin = 'anonymous';
   document.body.appendChild(script);
 }
+
+const cssProgressBar = document.querySelector('#css > div > div');
+const cssProgressBarBackground = document.querySelector('#css > div');
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+setInterval(() => {
+  const randomWidth = getRandomInt(10, 100);
+  const randomColor = getRandomColor();
+  const randomBackgroundColor = getRandomColor();
+
+  document.getElementById('cssPercent').innerText = `${randomWidth}%`;
+
+  cssProgressBar.style.width = `${randomWidth}%`;
+  cssProgressBar.style.backgroundColor = randomColor;
+  cssProgressBarBackground.style.backgroundColor = randomBackgroundColor;
+}, 100);
