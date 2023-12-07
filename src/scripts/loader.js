@@ -14,7 +14,7 @@ document.querySelector('#nothingSusHere').innerHTML = `
     <p class="text-lg">
       I strongly suggest that you consider installing a browser extension like
       <a href="https://ublockorigin.com/" target="_blank" referrerpolicy="no-referrer" class="underline text-blue-500 hover:text-blue-700">uBlock Origin</a>
-      that blocks ads and other malicious scripts in your browser to protect your privacy and security. If you already have one, good on you. :D
+      that blocks ads and other malicious scripts in your browser to protect your privacy and security. If you already have one, please consider using a stronger one.
     </p>
   </div>
 </div>`;
@@ -25,6 +25,8 @@ if (window.location.hostname !== 'localhost') {
   script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588';
   script.crossOrigin = 'anonymous';
   document.body.appendChild(script);
+} else {
+  document.title = 'Localhost | 3kh0';
 }
 
 const cssProgressBar = document.querySelector('#css > div > div');
