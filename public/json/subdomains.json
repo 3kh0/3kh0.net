@@ -9,6 +9,7 @@
     "cosmosproxy",
     "ftp",
     "kaz",
-    "cdn"
+    "cdn",
+    "corrupted"
   ]
 }
