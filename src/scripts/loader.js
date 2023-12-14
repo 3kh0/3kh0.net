@@ -47,14 +47,17 @@ function getRandomColor() {
   return color;
 }
 
-setInterval(() => {
-  const randomWidth = getRandomInt(10, 100);
-  const randomColor = getRandomColor();
-  const randomBackgroundColor = getRandomColor();
-
-  document.getElementById('cssPercent').innerText = `${randomWidth}%`;
-
-  cssProgressBar.style.width = `${randomWidth}%`;
-  cssProgressBar.style.backgroundColor = randomColor;
-  cssProgressBarBackground.style.backgroundColor = randomBackgroundColor;
-}, 100);
+if (window.pageNotFound) {
+  setInterval(() => {
+    console.log(window.pageNotFound)
+    const randomWidth = getRandomInt(10, 100);
+    const randomColor = getRandomColor();
+    const randomBackgroundColor = getRandomColor();
+  
+    document.getElementById('cssPercent').innerText = `${randomWidth}%`;
+  
+    cssProgressBar.style.width = `${randomWidth}%`;
+    cssProgressBar.style.backgroundColor = randomColor;
+    cssProgressBarBackground.style.backgroundColor = randomBackgroundColor;
+  }, 100);
+}
