@@ -47,7 +47,17 @@ function getRandomColor() {
   return color;
 }
 
-if (window.pageNotFound) {
+window.pageNotFound = false;
+
+// Handle 404
+if (window.location.pathname === "/") {
+  console.log("Home page");
+} else {
+  import("./404.js");
+  pageNotFound = true;
+}
+
+if (window.pageNotFound === false) {
   setInterval(() => {
     console.log(window.pageNotFound)
     const randomWidth = getRandomInt(10, 100);

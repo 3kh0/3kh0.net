@@ -20,13 +20,3 @@ console.log(
       fox gang :D⠀- 3kh0`,
   "color: #fc9505;"
 );
-
-window.pageNotFound = false;
-
-// Handle 404
-if (window.location.pathname === "/") {
-  console.log("Home page");
-} else {
-  import("./404.js");
-  pageNotFound = true;
-}
