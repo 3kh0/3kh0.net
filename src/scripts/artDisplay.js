@@ -14,12 +14,19 @@ let artData = [
     description: "I wonder what is inside the box, maybe a pipe bomb?",
     hoverText: "OH CRAP ITS A PIPE BOMB AAAAAAAAAAA",
   },
+  {
+    image: "img/art/chipflake-doodle.webp",
+    fullRes: "img/art/chipflake-doodle.png",
+    artist: "Sketch from Aaron (Chipflake)",
+    description: "It was pretty cool getting this drawn by Aaron on his stream! :D",
+    hoverText: "Keep in mind it is a silly little doodle, not a full drawing.",
+  },
 ];
 
-let currentArtIndex = 0;
+let currentArtIndex = Math.floor(Math.random() * artData.length); // Pick a random index on page load
 
 // update art display
-export function updateArtDisplay() {
+function updateArtDisplay() {
   const art = artData[currentArtIndex];
   document.getElementById("art-image").src = art.image;
   document.getElementById("art-link").href = art.fullRes;
@@ -28,16 +35,14 @@ export function updateArtDisplay() {
   document.getElementById("art-link").title = art.hoverText;
 }
 
-// get art data
-export function fetchArtData() {
-  updateArtDisplay();
+// Next art button click handler
+function onNextArtButtonClick() {
+  currentArtIndex = (currentArtIndex + 1) % artData.length; // Increment the index and loop back if necessary
+  updateArtDisplay(); // Update the display with the new art
 }
 
-// listen to button
-document.getElementById("next-button").addEventListener("click", () => {
-  currentArtIndex = (currentArtIndex + 1) % artData.length;
-  updateArtDisplay();
-});
+// Attach the click handler to the Next Art button
+document.getElementById("next-art-button").addEventListener("click", onNextArtButtonClick);
 
-// get art during page load
-fetchArtData();
+// Call updateArtDisplay on page load to display the initial random art
+updateArtDisplay();
