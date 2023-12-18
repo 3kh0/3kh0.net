@@ -15,7 +15,7 @@
     "lightningcss": "^1.22.1",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
-    "vite": "^5.0.7",
+    "vite": "^5.0.10",
     "vite-plugin-minify": "^1.5.2"
   }
 }
