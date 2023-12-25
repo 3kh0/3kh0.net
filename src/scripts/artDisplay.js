@@ -23,7 +23,7 @@ let artData = [
   },
 ];
 
-let currentArtIndex = Math.floor(Math.random() * artData.length); // Pick a random index on page load
+let currentArtIndex = Math.floor(Math.random() * artData.length);
 
 // update art display
 function updateArtDisplay() {
@@ -35,14 +35,11 @@ function updateArtDisplay() {
   document.getElementById("art-link").title = art.hoverText;
 }
 
-// Next art button click handler
 function onNextArtButtonClick() {
-  currentArtIndex = (currentArtIndex + 1) % artData.length; // Increment the index and loop back if necessary
-  updateArtDisplay(); // Update the display with the new art
+  currentArtIndex = (currentArtIndex + 1) % artData.length;
+  updateArtDisplay();
 }
 
-// Attach the click handler to the Next Art button
 document.getElementById("next-art-button").addEventListener("click", onNextArtButtonClick);
 
-// Call updateArtDisplay on page load to display the initial random art
 updateArtDisplay();
