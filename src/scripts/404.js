@@ -3,7 +3,6 @@ document.body.innerHTML = `
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- get the fun spinner up so it looks like we are doing something -->
     <script>
       const startTime = performance.now();
       window.addEventListener("load", function () {

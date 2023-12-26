@@ -1,7 +1,7 @@
 // /src/scripts/loader.js
 // This loads stuff into the main page, it makes it do the thing
 
-document.querySelector('#nothingSusHere').innerHTML = `
+document.querySelector("#nothingSusHere").innerHTML = `
 <div
   id="ftf-dma-note"
   class="ftf-dma-note d-none ad native-ad native-ad-1 ytd-j yxd-j yxd-jd aff-content-col aff-inner-col aff-item-list ark-ad-message inplayer-ad inplayer_banners in_stream_banner trafficjunky-float-right dbanner preroll-blocker happy-inside-player blocker-notice blocker-overlay exo-horizontal ave-pl bottom-hor-block brs-block advboxemb wgAdBlockMessage glx-watermark-container overlay-advertising-new header-menu-bottom-ads rkads mdp-deblocker-wrapper amp-ad-inner imggif bloc-pub bloc-pub2 hor_banner aan_fake aan_fake__video-units rps_player_ads fints-block__row full-ave-pl full-bns-block vertbars video-brs player-bns-block wps-player__happy-inside gallery-bns-bl stream-item-widget adsbyrunactive happy-under-player adde_modal_detector adde_modal-overlay ninja-recommend-block aoa_overlay message ftf-dma-note fixed bottom-4 left-4 right-4 bg-red-900 text-white p-4 text-left rounded-lg shadow-lg z-40"
@@ -19,18 +19,28 @@ document.querySelector('#nothingSusHere').innerHTML = `
   </div>
 </div>`;
 
-if (window.location.hostname !== 'localhost') {
-  var script = document.createElement('script');
+if (window.location.hostname !== "localhost") {
+  var script = document.createElement("script");
   script.async = true;
-  script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588';
-  script.crossOrigin = 'anonymous';
+  script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588";
+  script.crossOrigin = "anonymous";
   document.body.appendChild(script);
 } else {
-  document.title = 'Localhost | 3kh0';
+  document.title = "Localhost | 3kh0";
 }
 
-const cssProgressBar = document.querySelector('#css > div > div');
-const cssProgressBarBackground = document.querySelector('#css > div');
+window.onload = function () {
+  setInterval(function () {
+    const johnFrame = document.getElementById("johnFrame");
+    const src = johnFrame.src;
+    johnFrame.src = "";
+    johnFrame.src = src;
+    console.log("John frame reloaded")
+  }, 60000); // 1 minute
+};
+
+const cssProgressBar = document.querySelector("#css > div > div");
+const cssProgressBarBackground = document.querySelector("#css > div");
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -39,8 +49,8 @@ function getRandomInt(min, max) {
 }
 
 function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
+  const letters = "0123456789ABCDEF";
+  let color = "#";
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
@@ -51,7 +61,7 @@ window.pageNotFound = false;
 
 // Handle 404
 if (window.location.pathname === "/") {
-  console.log("Home page");
+  // console.log("Home page");
 } else {
   import("./404.js");
   pageNotFound = true;
@@ -59,13 +69,13 @@ if (window.location.pathname === "/") {
 
 if (window.pageNotFound === false) {
   setInterval(() => {
-    console.log(window.pageNotFound)
+    // console.log(window.pageNotFound);
     const randomWidth = getRandomInt(10, 100);
     const randomColor = getRandomColor();
     const randomBackgroundColor = getRandomColor();
-  
-    document.getElementById('cssPercent').innerText = `${randomWidth}%`;
-  
+
+    document.getElementById("cssPercent").innerText = `${randomWidth}%`;
+
     cssProgressBar.style.width = `${randomWidth}%`;
     cssProgressBar.style.backgroundColor = randomColor;
     cssProgressBarBackground.style.backgroundColor = randomBackgroundColor;
