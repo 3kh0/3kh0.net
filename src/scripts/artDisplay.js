@@ -21,6 +21,13 @@ let artData = [
     description: "It was pretty cool getting this drawn by Aaron on his stream! :D",
     hoverText: "Keep in mind it is a silly little doodle, not a full drawing.",
   },
+  {
+    image: "img/art/echo_autism.webp",
+    fullRes: "img/art/echo_autism.png",
+    artist: "Art from Belonmelon on discord",
+    description: "Mein Gott Leute, meine Mama hat mir einfach erlaubt dass ich Cola trinken darf! Wie cool ist das bitte? Jetzt zocke ich Fortnite und trinke Cola! YIPPEE!",
+    hoverText: "it looks so stupid yet so good at the same time xd",
+  },
 ];
 
 let currentArtIndex = Math.floor(Math.random() * artData.length);
