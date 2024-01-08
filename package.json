@@ -14,7 +14,7 @@
     "autoprefixer": "^10.4.16",
     "lightningcss": "^1.22.1",
     "postcss": "^8.4.32",
-    "tailwindcss": "^3.4.0",
+    "tailwindcss": "^3.4.1",
     "vite": "^5.0.10",
     "vite-plugin-minify": "^1.5.2"
   }
