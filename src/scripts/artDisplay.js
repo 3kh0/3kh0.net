@@ -1,14 +1,14 @@
 // /src/scripts/artDisplay.js
 let artData = [
   {
-    image: "img/art/Echosketch-preview.webp",
+    image: "img/art/Echosketch.webp",
     fullRes: "img/art/Echosketch.png",
     artist: "Comission from sachiyako on discord",
     description: "I love it so much, the details are amazing, and the colors are perfect!",
     hoverText: "Wondering what that text in the background says? It's a secret!",
   },
   {
-    image: "img/art/holidaypic-preview.webp",
+    image: "img/art/holidaypic.webp",
     fullRes: "img/art/holidaypic.png",
     artist: "Fanart from Kittrel",
     description: "I wonder what is inside the box, maybe a pipe bomb?",
@@ -28,6 +28,13 @@ let artData = [
     description: "Mein Gott Leute, meine Mama hat mir einfach erlaubt dass ich Cola trinken darf! Wie cool ist das bitte? Jetzt zocke ich Fortnite und trinke Cola! YIPPEE!",
     hoverText: "it looks so stupid yet so good at the same time xd",
   },
+  {
+    image: "img/art/echo_simple.webp",
+    fullRes: "img/art/echo_simple.png",
+    artist: "Comission from Nigata natsumoto on discord",
+    description: "Little do you know he is wanted from over 150 countries for war crimes.",
+    hoverText: "Is one tail canon? I don't know, but it looks cool.",
+  }
 ];
 
 let currentArtIndex = Math.floor(Math.random() * artData.length);
