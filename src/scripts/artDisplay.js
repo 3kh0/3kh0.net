@@ -25,7 +25,7 @@ let artData = [
     image: "img/art/echo_autism.webp",
     fullRes: "img/art/echo_autism.png",
     artist: "Art from <a class='text-lg font-semibold text-blue-500' href='https://toyhou.se/Belonmelon' target='_blank'>Belonmelon</a>",
-    description: "Mein Gott Leute, meine Mama hat mir einfach erlaubt dass ich Cola trinken darf! Wie cool ist das bitte? Jetzt zocke ich Fortnite und trinke Cola! YIPPEE!",
+    description: "Wie cool ist das bitte? Jetzt zocke ich Fortnite und trinke Cola! YIPPEE!",
     hoverText: "it looks so stupid yet so good at the same time xd",
   },
   {
@@ -41,7 +41,14 @@ let artData = [
     artist: "Comission from <a class='text-lg font-semibold text-blue-500' href='https://twitter.com/crispies_art' target='_blank'>crisspiess</a>",
     description: "Never paid taxes on my crypto, and I never will!",
     hoverText: "Why do he be dripping with that hoodie doe?",
-  }
+  },
+  {
+    image: "img/art/rainbow_art.webp",
+    fullRes: "img/art/rainbow_art.png",
+    artist: "Request from <a class='text-lg font-semibold text-blue-500' href='https://toyhou.se/TheDoubleTailedrainB' target='_blank'>Thedoubletailedrainbow</a>",
+    description: "That's one silly fox boy",
+    hoverText: "Def not a mugshot, I swear.",
+  },
 ];
 
 // Link template:
