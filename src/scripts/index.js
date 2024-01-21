@@ -32,9 +32,9 @@ window.onload = function() {
           <p class="text-sm">Programmer, Hacker, Silly fox</p>
         </div>
         <div>
-          <a href="#projects" class="button"><i class="fas fa-project-diagram"></i> Projects</a>
-          <a href="#art" class="button"><i class="fas fa-palette"></i> Art</a>
-          <a href="#connect" class="button"><i class="fas fa-share-alt"></i> Socials</a>
+          <a href="/#projects" class="button"><i class="fas fa-project-diagram"></i> Projects</a>
+          <a href="/#art" class="button"><i class="fas fa-palette"></i> Art</a>
+          <a href="/#connect" class="button"><i class="fas fa-share-alt"></i> Socials</a>
           <a href="/extra/index.html"><i class="fas fa-star"></i> Extras</a>
         </div>
       </header>
