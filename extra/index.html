@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      const startTime = performance.now();
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        loader.style.display = "none";
+        const endTime = performance.now();
+        const elapsedTime = endTime - startTime;
+        console.log(`Page loaded in ${elapsedTime} ms`);
+      });
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Extra Pages</title>
     <link rel="stylesheet" href="/src/css/tailwind.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="bg-gray-900 text-white font-sans">
+    <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-white z-50">
+      <div class="animate-spin rounded-full h-32 w-32"></div>
+    </div>
     <div id="header"></div>
     <main class="max-w-6xl mx-auto mt-10 px-4">
       <h2 class="text-3xl mb-4">Extra Pages</h2>
