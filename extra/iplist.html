@@ -57,13 +57,13 @@
       fetch("https://wtfismyip.com/json")
         .then((response) => response.json())
         .then((data) => {
-          document.getElementById("ip-address").textContent += data.YourFuckingIPAddress;
-          document.getElementById("location").textContent += data.YourFuckingLocation;
-          document.getElementById("hostname").textContent += data.YourFuckingHostname;
-          document.getElementById("isp").textContent += data.YourFuckingISP;
-          document.getElementById("city").textContent += data.YourFuckingCity;
-          document.getElementById("country").textContent += data.YourFuckingCountry;
-          document.getElementById("country-code").textContent += data.YourFuckingCountryCode;
+          document.getElementById("ip-address").textContent += " " + data.YourFuckingIPAddress;
+          document.getElementById("location").textContent += " " + data.YourFuckingLocation;
+          document.getElementById("hostname").textContent += " " + data.YourFuckingHostname;
+          document.getElementById("isp").textContent += " " + data.YourFuckingISP;
+          document.getElementById("city").textContent += " " + data.YourFuckingCity;
+          document.getElementById("country").textContent += " " + data.YourFuckingCountry;
+          document.getElementById("country-code").textContent += " " + data.YourFuckingCountryCode;
           document.getElementById("progress-bar").style.display = 'none';
         });
     </script>
