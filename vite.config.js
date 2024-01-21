@@ -12,7 +12,7 @@ export default {
       input: {
         index: resolve(__dirname, 'index.html'),
         extra: resolve(__dirname, 'extra/index.html'),
-        aboutblank: resolve(__dirname, 'extra/aboutblank.html.html'),
+        aboutblank: resolve(__dirname, 'extra/aboutblank.html'),
         iplist: resolve(__dirname, 'extra/iplist.html'),
         urlopen: resolve(__dirname, 'extra/urlopen.html'),
       },
