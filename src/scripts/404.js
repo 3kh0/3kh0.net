@@ -20,14 +20,7 @@ document.body.innerHTML = `
     <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-white z-50">
       <div class="animate-spin rounded-full h-32 w-32"></div>
     </div>
-    <div id="header">
-      <header class="py-4 px-8 flex justify-between items-center max-w-6xl mx-auto">
-        <div>
-          <h1 class="text-7xl font-bold text-green-500 text-center py-1">3kh0</h1>
-          <p class="text-sm">Programmer, Hacker, Kitsune</p>
-        </div>
-      </header>
-    </div>
+    <div id="header"></div>
     <div class="h-[60vh] w-screen flex items-center justify-center">
       <div class="text-center">
         <h1 class="text-[128px] font-bold text-red-500 py-8">404</h1>
@@ -41,6 +34,7 @@ document.body.innerHTML = `
         <p class="text-center text-m">Made by 3kh0, built using Vite and Tailwind</p>
       </section>
     </div>
+    <script defer type="module" src="/src/scripts/index.js"></script>
   </body>
 </html>
 `;
