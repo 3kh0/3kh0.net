@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Redirector</title>
+</head>
+<body>
+    <h1>URL Redirector</h1>
+    <form id="redirectForm">
+        <input type="url" id="urlInput" placeholder="Enter URL" required>
+        <button type="submit">Go</button>
+    </form>
+
+    <script>
+        document.getElementById('redirectForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var url = document.getElementById('urlInput').value;
+            window.location.href = url;
+        });
+    </script>
+</body>
+</html>
