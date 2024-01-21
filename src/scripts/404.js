@@ -1,4 +1,4 @@
-// src/scripts/404.js 
+// /src/scripts/404.js 
 document.body.innerHTML = `
 <!DOCTYPE html>
 <html lang="en">
