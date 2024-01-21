@@ -38,7 +38,7 @@
 
       extraPages.forEach((page) => {
         const link = document.createElement("a");
-        link.href = `https://${location.host}/extra/${page.url}`;
+        link.href = `http://${location.host}/extra/${page.url}`;
         link.className = "block bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300";
 
         const title = document.createElement("h3");
