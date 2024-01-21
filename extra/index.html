@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Extra Pages</title>
-  <link rel="stylesheet" href="/src/css/tailwind.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="bg-gray-900 text-white font-sans">
-  <div id="header"></div>
-  <main class="max-w-6xl mx-auto mt-10 px-4">
-    <h2 class="text-2xl font-bold mb-4">Extra Pages</h2>
-    <div id="extra-pages-list" class="flex flex-col items-start space-y-2"></div>
-  </main>
-  <script defer type="module" src="/src/scripts/extra-pages.js"></script>
-  <script defer type="module" src="/src/scripts/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extra Pages</title>
+    <link rel="stylesheet" href="/src/css/tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <div id="header"></div>
+    <main class="max-w-6xl mx-auto mt-10 px-4">
+      <h2 class="text-3xl mb-4">Extra Pages</h2>
+      <div id="pageList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </main>
+    <script>
+      const extraPagesList = document.getElementById("pageList");
+      const extraPages = [
+        { url: "aboutblank.html", title: "About Blank", description: "About blank embedder tool" },
+        { url: "index.html", title: "Index", description: "This silly page" },
+        { url: "iplist.html", title: "IP List", description: "Finds your IP" },
+        { url: "urlopen.html", title: "URL Direct", description: "Page opener tool (useful for kiosk exploits)" },
+      ];
+
+      extraPages.forEach((page) => {
+        const link = document.createElement("a");
+        link.href = `${location.host}/extra/${page.url}`;
+        link.className = "block bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300";
+
+        const title = document.createElement("h3");
+        title.textContent = page.title;
+        title.className = "text-xl font-semibold mb-2";
+        link.appendChild(title);
+
+        const description = document.createElement("p");
+        description.textContent = page.description;
+        description.className = "text-sm";
+        link.appendChild(description);
+
+        extraPagesList.appendChild(link);
+      });
+    </script>
+    <script defer type="module" src="/src/scripts/index.js"></script>
+  </body>
 </html>
