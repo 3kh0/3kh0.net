@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="/src/css/tailwind.css" />
-  <title>URL Redirector</title>
-</head>
-<body class="bg-gray-200 flex items-center justify-center h-screen">
-  <div class="bg-white p-8 rounded shadow-md w-64">
-    <h1 class="text-2xl mb-4 text-center">URL Redirector</h1>
-    <form id="redirectForm">
-      <input type="url" id="urlInput" class="w-full p-2 border border-gray-300 rounded mb-4" placeholder="Enter URL" required>
-      <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Go</button>
-    </form>
-  </div>
-
-  <script>
-    document.getElementById('redirectForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      var url = document.getElementById('urlInput').value;
-      window.location.href = url;
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Director</title>
+    <link rel="stylesheet" href="/src/css/tailwind.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-gray-800 text-white font-sans">
+    <div class="flex items-center justify-center h-screen">
+      <input type="text" id="url-input" placeholder="Enter URL here..." class="p-2 mr-2 w-64 bg-white text-black" />
+      <button onclick="redirectToUrl()" class="p-2 bg-blue-500 text-white">Go</button>
+    </div>
+    <script>
+      function redirectToUrl() {
+        var url = document.getElementById("url-input").value;
+        if (url) {
+          window.location.href = url;
+        }
+      }
+    </script>
+  </body>
 </html>
