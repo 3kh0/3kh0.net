@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>URL Redirector</title>
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+  <title>URL Redirector</title>
 </head>
-<body>
-    <h1>URL Redirector</h1>
+<body class="bg-gray-200 flex items-center justify-center h-screen">
+  <div class="bg-white p-8 rounded shadow-md w-64">
+    <h1 class="text-2xl mb-4 text-center">URL Redirector</h1>
     <form id="redirectForm">
-        <input type="url" id="urlInput" placeholder="Enter URL" required>
-        <button type="submit">Go</button>
+      <input type="url" id="urlInput" class="w-full p-2 border border-gray-300 rounded mb-4" placeholder="Enter URL" required>
+      <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Go</button>
     </form>
+  </div>
 
-    <script>
-        document.getElementById('redirectForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            var url = document.getElementById('urlInput').value;
-            window.location.href = url;
-        });
-    </script>
+  <script>
+    document.getElementById('redirectForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var url = document.getElementById('urlInput').value;
+      window.location.href = url;
+    });
+  </script>
 </body>
 </html>
