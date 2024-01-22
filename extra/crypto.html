@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Crypto Wallets</title>
+    <link rel="stylesheet" href="/src/css/tailwind.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <div id="header"></div>
+    <main class="max-w-6xl mx-auto mt-10 px-4">
+      <h2 class="text-3xl mb-4">My Crypto Wallets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px]">
+          <h3 class="text-2xl mb-2">Monero (XMR)</h3>
+          <img src="/img/wallets/xmr.png" alt="XMR Wallet QR Code" class="mb-2 rounded-xl" />
+          <p id="xmr-address" class="wallet-address w-full whitespace-pre-wrap">43LSJpZ6Le84...nHW1VHMAb6YDrH</p>
+          <button onclick="copyAdr('43LSJpZ6Le84eMiLTmMwZgTDMxtPthDh8Cdk1HWuLAx9itTgj8YqLbGE7hFYXSR6p6YVP8g4TMWxDiQTDnHW1VHMAb6YDrH')" class="w-full mt-2 bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-4 rounded">
+            <i class="fas fa-copy"></i> Copy address
+          </button>
+          <a href="https://xmrchain.net/search?value=43LSJpZ6Le84eMiLTmMwZgTDMxtPthDh8Cdk1HWuLAx9itTgj8YqLbGE7hFYXSR6p6YVP8g4TMWxDiQTDnHW1VHMAb6YDrH" target="_blank" class="w-full">
+            <button class="w-full mt-2 bg-green-500 hover:bg-green-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-external-link-alt"></i> Open in Explorer</button>
+          </a>
+        </div>
+        <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px]">
+          <h3 class="text-2xl mb-2">BTC Wallet</h3>
+          <img src="/img/wallets/btc.png" alt="BTC Wallet QR Code" class="mb-2 rounded-xl" />
+          <p id="btc-address" class="wallet-address w-full whitespace-pre-wrap">33WimAtvLLmE...wc8ev7tjmzCU2Mq</p>
+          <button onclick="copyAdr('33WimAtvLLmEREJBUS2wc8ev7tjmzCU2Mq')" class="w-full mt-2 bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-copy"></i> Copy address</button>
+          <a href="https://mempool.space/address/33WimAtvLLmEREJBUS2wc8ev7tjmzCU2Mq" target="_blank">
+            <button class="w-full mt-2 bg-green-500 hover:bg-green-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-external-link-alt"></i> Open in Explorer</button>
+          </a>
+        </div>
+        <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px]">
+          <h3 class="text-2xl mb-2">ETH Wallet</h3>
+          <img src="/img/wallets/eth.png" alt="ETH Wallet QR Code" class="mb-2 rounded-xl" />
+          <p id="eth-address" class="wallet-address w-full whitespace-pre-wrap">0xCDe3a3DEcE1f...d2a2D92017A2a624A</p>
+          <button onclick="copyAdr('0xCDe3a3DEcE1f80cE6371D4ed2a2D92017A2a624A')" class="w-full mt-2 bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-copy"></i> Copy address</button>
+          <a href="https://etherscan.io/address/0xCDe3a3DEcE1f80cE6371D4ed2a2D92017A2a624A" target="_blank">
+            <button class="w-full mt-2 bg-green-500 hover:bg-green-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-external-link-alt"></i> Open in Explorer</button>
+          </a>
+        </div>
+        <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px]">
+          <h3 class="text-2xl mb-2">LTC Wallet</h3>
+          <img src="/img/wallets/ltc.png" alt="LTC Wallet QR Code" class="mb-2 rounded-xl" />
+          <p id="ltc-address" class="wallet-address w-full whitespace-pre-wrap">MSiBQ181HZVP...VHz7DEuEc5Jm9r</p>
+          <button onclick="copyAdr('MSiBQ181HZVPKtz9cTf9VHz7DEuEc5Jm9r')" class="w-full mt-2 bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-copy"></i> Copy address</button>
+          <a href="https://explorer.litecoin.net/address/MSiBQ181HZVPKtz9cTf9VHz7DEuEc5Jm9r" target="_blank">
+            <button class="w-full mt-2 bg-green-500 hover:bg-green-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-external-link-alt"></i> Open in Explorer</button>
+          </a>
+        </div>
+      </div>
+    </main>
+    <script defer type="module" src="/src/scripts/index.js"></script>
+    <script>
+      function copyAdr(txt) {
+        navigator.clipboard.writeText(txt);
+      }
+    </script>
+  </body>
+</html>
