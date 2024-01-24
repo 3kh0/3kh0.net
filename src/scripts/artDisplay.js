@@ -53,8 +53,8 @@ let artData = [
     image: "img/art/Palestine_support.webp",
     fullRes: "img/art/Palestine_support.png",
     artist: "Request from <a class='text-lg font-semibold text-blue-500' href='https://linktr.ee/pup.dagger' target='_blank'>@pup.dagger</a> with lines by Pulex",
-    description: "I support rights for the people in Palestine, and you should too. :D",
-    hoverText: "Nom nom",
+    description: "I support human rights for Palestine. Donate US Campaign for Palestinian Rights at <a class='text-blue-500' href='https://uscpr.org/' target='_blank'>uscpr.org</a>",
+    hoverText: "",
   }
 ];
 
@@ -69,7 +69,7 @@ function updateArtDisplay() {
   document.getElementById("art-image").src = art.image;
   document.getElementById("art-link").href = art.fullRes;
   document.getElementById("artist-name").innerHTML = art.artist;
-  document.getElementById("art-description").textContent = art.description;
+  document.getElementById("art-description").innerHTML = art.description;
   document.getElementById("art-link").title = art.hoverText;
 }
 
