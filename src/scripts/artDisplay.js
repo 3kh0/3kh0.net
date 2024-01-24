@@ -49,6 +49,13 @@ let artData = [
     description: "That's one silly fox boy",
     hoverText: "Def not a mugshot, I swear.",
   },
+  {
+    image: "img/art/Palestine_support.webp",
+    fullRes: "img/art/Palestine_support.png",
+    artist: "Request from <a class='text-lg font-semibold text-blue-500' href='https://linktr.ee/pup.dagger' target='_blank'>@pup.dagger</a> with lines by Pulex",
+    description: "I support rights for the people in Palestine, and you should too. :D",
+    hoverText: "Nom nom",
+  }
 ];
 
 // Link template:
