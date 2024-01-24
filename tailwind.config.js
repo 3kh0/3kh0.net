@@ -6,7 +6,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'outline': '0 0 10px #3b82f6',
+      }
+    }
   },
   plugins: [],
 }
