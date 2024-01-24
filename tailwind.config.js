@@ -7,10 +7,17 @@ export default {
   ],
   theme: {
     extend: {
-      boxShadow: {
-        'outline': '0 0 10px #3b82f6',
+      textShadow: {
+        'default': '0 0 5px #22c55e, 0 0 5px #22c55e',
       }
     }
   },
-  plugins: [],
+  variants: {
+    extend: {
+      textShadow: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    },
+  },
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }
