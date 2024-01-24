@@ -48,6 +48,10 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/**
+ * Generates a random color in hexadecimal format.
+ * @returns {string} The randomly generated color.
+ */
 function getRandomColor() {
   const letters = "0123456789ABCDEF";
   let color = "#";

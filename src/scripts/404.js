@@ -1,4 +1,8 @@
 // /src/scripts/404.js 
+/**
+ * This script sets up the HTML content for a 404 error page.
+ * Referenced and used at loader.js:66
+ */
 document.body.innerHTML = `
 <!DOCTYPE html>
 <html lang="en">

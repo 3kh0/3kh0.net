@@ -23,6 +23,11 @@ console.log(
 
 // Place headers on pages that don't have them
 window.onload = function() {
+  /**
+   * Header div placement.
+   * TODO: Make header work for mobile screens.
+   * @type {HTMLElement}
+   */
   var headerDiv = document.getElementById('header');
   if (headerDiv) {
     headerDiv.innerHTML = `

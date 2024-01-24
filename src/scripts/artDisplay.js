@@ -1,4 +1,8 @@
 // /src/scripts/artDisplay.js
+/**
+ * Array of art data objects.
+ * @type {Array<Object>}
+ */
 let artData = [
   {
     image: "img/art/Echosketch.webp",
@@ -58,12 +62,11 @@ let artData = [
   }
 ];
 
-// Link template:
-// <a class='text-lg font-semibold text-blue-500' href='https://twitter.com/crispies_art' target='_blank'>@crispies_art</a>
-
 let currentArtIndex = Math.floor(Math.random() * artData.length);
 
-// update art display
+/**
+ * Updates the art display with the information from the current art object.
+ */
 function updateArtDisplay() {
   const art = artData[currentArtIndex];
   document.getElementById("art-image").src = art.image;

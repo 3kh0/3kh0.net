@@ -3,6 +3,10 @@
 // https://stefanbohacek.com/project/detect-missing-adblocker-wordpress-plugin/
 
 document.getElementById("ftf-dma-close-btn").addEventListener("click", () => {
+  /**
+   * Represents the adblock notice element.
+   * @type {HTMLElement}
+   */
   var notice = document.getElementById("ftf-dma-note");
   if (notice) {
     notice.style.animation = "slide-down 0.5s ease-out";
