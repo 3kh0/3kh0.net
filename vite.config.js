@@ -17,6 +17,7 @@ export default {
         iplist: resolve(__dirname, 'extra/iplist.html'),
         urlopen: resolve(__dirname, 'extra/urlopen.html'),
         crypto: resolve(__dirname, 'extra/crypto.html'),
+        fursonaref: resolve(__dirname, 'extra/fursona-ref.html'),
       },
     },
   },
