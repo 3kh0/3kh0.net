@@ -25,6 +25,15 @@
           </a>
         </div>
         <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px]">
+          <h3 class="text-2xl mb-2">USD Coin (USDC) <i class="fas fa-info-circle cursor-pointer" onclick="toggleModal('usdc-info')"></i></h3>
+          <img src="/img/wallets/usdc.png" alt="ETH Wallet QR Code" class="mb-2 rounded-xl" />
+          <p id="eth-address" class="wallet-address w-full whitespace-pre-wrap">0xe37Bd63515c...3825F7e7349C690</p>
+          <button onclick="copyAdr('0xe37Bd63515c2423ef957b81483825F7e7349C690')" class="w-full mt-2 bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-copy"></i> Copy address</button>
+          <a href="https://polygonscan.com/address/0xe37Bd63515c2423ef957b81483825F7e7349C690" target="_blank">
+            <button class="w-full mt-2 bg-green-500 hover:bg-green-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-external-link-alt"></i> Open in Explorer</button>
+          </a>
+        </div>
+        <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px]">
           <h3 class="text-2xl mb-2">Bitcoin (BTC)</h3>
           <img src="/img/wallets/btc.png" alt="BTC Wallet QR Code" class="mb-2 rounded-xl" />
           <p id="btc-address" class="wallet-address w-full whitespace-pre-wrap">33WimAtvLLmE...wc8ev7tjmzCU2Mq</p>
@@ -34,7 +43,7 @@
           </a>
         </div>
         <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px]">
-          <h3 class="text-2xl mb-2">Ethereum (ETH)</h3>
+          <h3 class="text-2xl mb-2">Ethereum (ETH) <i class="fas fa-info-circle cursor-pointer" onclick="toggleModal('eth-info')"></i></h3>
           <img src="/img/wallets/eth.png" alt="ETH Wallet QR Code" class="mb-2 rounded-xl" />
           <p id="eth-address" class="wallet-address w-full whitespace-pre-wrap">0xCDe3a3DEcE1f...a2D92017A2a624A</p>
           <button onclick="copyAdr('0xCDe3a3DEcE1f80cE6371D4ed2a2D92017A2a624A')" class="w-full mt-2 bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-copy"></i> Copy address</button>
@@ -51,23 +60,84 @@
             <button class="w-full mt-2 bg-green-500 hover:bg-green-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-external-link-alt"></i> Open in Explorer</button>
           </a>
         </div>
-        <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px]">
-          <h3 class="text-2xl mb-2">Tether (USDT)</h3>
+        <div class="wallet mt-4 bg-gray-800 p-4 rounded-xl shadow-lg w-[300px] relative">
+          <h3 class="text-2xl mb-2">Tether (USDT) <i class="fas fa-info-circle cursor-pointer" onclick="toggleModal('usdt-info')"></i></h3>
           <img src="/img/wallets/usdt.png" alt="USDT Wallet QR Code" class="mb-2 rounded-xl" />
           <p id="usdt-address" class="wallet-address w-full whitespace-pre-wrap">0x360a98086a629...685382dece5753</p>
-          <button onclick="copyAdr('0x360a98086a62974F5a7bfF723B685382dece5753')" class="w-full mt-2 bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-4 rounded">
-            <i class="fas fa-copy"></i> Copy address
-          </button>
+          <button onclick="copyAdr('0x360a98086a62974F5a7bfF723B685382dece5753')" class="w-full mt-2 bg-blue-500 hover:bg-blue-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-copy"></i> Copy address</button>
           <a href="https://www.okx.com/explorer/usdt/address/0x360a98086a62974F5a7bfF723B685382dece5753" target="_blank" class="w-full">
             <button class="w-full mt-2 bg-green-500 hover:bg-green-700 transition duration-300 text-white py-2 px-4 rounded"><i class="fas fa-external-link-alt"></i> Open in Explorer</button>
           </a>
         </div>
       </div>
     </main>
+    <div id="modals">
+      <div id="usdt-info" class="modal hidden fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-end justify-center min-h-screen">
+          <div class="modal-content bg-gray-600 text-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full dark">
+            <div class="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <h3 class="text-lg leading-6 font-medium text-white" id="modal-title">
+                Only send USDT (ERC-20) to this address
+              </h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-300">
+                  This is an ERC-20 (Ethereum) address. Do not send USDT over any other network to this address or your funds may be lost. If you are unsure, send a small amount first to test.
+                </p>
+              </div>
+              <button type="button" onclick="toggleModal('usdt-info')" class="w-full inline-flex justify-center rounded-lg shadow-sm mt-4 px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 sm:m-2 sm:w-auto sm:text-sm">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="eth-info" class="modal hidden fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-end justify-center min-h-screen">
+          <div class="modal-content bg-gray-600 text-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full dark">
+            <div class="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <h3 class="text-lg leading-6 font-medium text-white" id="modal-title">
+                High gas fees with Ethereum, use Base
+              </h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-300">
+                  Ethereum gas fees are very high right now. Use Base to send ETH and ERC-20 tokens for much lower fees and faster confirmations. If you do use Base, don't send WETH, ERC-20s, or NFTs, or it may result in a loss of funds. In rare cases, extremely large deposits or deposits made during periods of high activity may be subject to a delay of up to 7 days. I HIGHLY recommend you use a differency currency. If you are unsure, send a small amount first to test.
+                </p>
+              </div>
+              <button type="button" onclick="toggleModal('eth-info')" class="w-full inline-flex justify-center rounded-lg shadow-sm mt-4 px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 sm:m-2 sm:w-auto sm:text-sm">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="usdc-info" class="modal hidden fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-end justify-center min-h-screen">
+          <div class="modal-content bg-gray-600 text-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full dark">
+            <div class="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <h3 class="text-lg leading-6 font-medium text-white" id="modal-title">
+                Only use the Polygon network for USDC
+              </h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-300">
+                  This address can receive native and bridged USDC from the Polygon network. Don't send USDC from other networks or it may result in a loss of funds. In rare cases, extremely large deposits or deposits made during periods of high activity may be subject to a delay of up to a few hours. If you are unsure, send a small amount first to test.
+                </p>
+              </div>
+              <button type="button" onclick="toggleModal('usdc-info')" class="w-full inline-flex justify-center rounded-lg shadow-sm mt-4 px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 sm:m-2 sm:w-auto sm:text-sm">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script defer type="module" src="/src/scripts/index.js"></script>
     <script>
       function copyAdr(txt) {
         navigator.clipboard.writeText(txt);
+      }
+      function toggleModal(id) {
+        const modal = document.getElementById(id);
+        modal.classList.toggle("hidden");
       }
     </script>
   </body>
