@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      const startTime = performance.now();
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        loader.style.display = "none";
+        const endTime = performance.now();
+        const elapsedTime = endTime - startTime;
+        console.log(`Page loaded in ${elapsedTime} ms`);
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fursona Information</title>
+    <link rel="stylesheet" href="/src/css/tailwind.css" />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-white z-50">
+      <div class="animate-spin rounded-full h-32 w-32"></div>
+    </div>
+    <div id="header"></div>
+    <main class="max-w-6xl mx-auto mt-10 px-4 flex flex-wrap">
+      <section id="content" class="w-full lg:w-3/4 lg:pr-8 mb-8">
+        <div class="bg-gray-700 rounded-lg p-4">
+          <h2 class="text-3xl mb-4">Fursona Information</h2>
+          <h2 class="text-2xl mb-2">About</h2>
+          <p class="text-lg">Echo is a silly fox</p>
+          <h2 class="text-2xl mb-2">Design</h2>
+          <p class="text-lg">Fox seen wearing sweatshirts most of them. Bounus points if it has the monero logo on it.</p>
+          <h2 class="text-2xl mb-2">Do's and Don'ts</h2>
+          <p>Yes:</p>
+          <ul>
+            <li><i class="fas fa-square-check"></i> Draw without asking first</li>
+            <li><i class="fas fa-square-check"></i> Pride art</li>
+            <li><i class="fas fa-square-check"></i> Design changes</li>
+            <li><i class="fas fa-square-check"></i> Species swap (including humans/humanoid species)</li>
+          </ul>
+          <p>No:</p>
+          <ul>
+            <li><i class="fas fa-square-xmark"></i> NSFW, any and all kinds</li>
+            <li><i class="fas fa-square-xmark"></i> Fetish/kink art</li>
+            <li><i class="fas fa-square-xmark"></i> Gore of any kind</li>
+          </ul>
+        </div>
+      </section>
+      <section id="quick-facts" class="w-full lg:w-1/4 mb-8">
+        <div class="bg-gray-700 rounded-lg p-4">
+          <h2 class="text-2xl mb-2">Echo</h2>
+          <div class="grid grid-cols-1 gap-4">
+            <div>
+              <img src="/img/art/xmr_hoodie.webp" alt="Fursona Image" class="w-full h-auto rounded-lg mx-auto" />
+            </div>
+            <div>
+              <ul>
+                <li><strong>Name:</strong> Echo</li>
+                <li><strong>Age:</strong> 15</li>
+                <li><strong>Body Type:</strong> Anthro</li>
+                <li><strong>Pronouns:</strong> he/him</li>
+                <li><strong>Species:</strong> Fox</li>
+                <li><strong>Gender:</strong> Male</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script defer type="module" src="/src/scripts/index.js"></script>
+  </body>
+</html>
