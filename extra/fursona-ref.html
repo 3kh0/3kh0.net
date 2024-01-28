@@ -40,19 +40,34 @@
               <li><span class="bullet-point">•</span> The tip of the ears are a bit darker</li>
             </ul>
           <h2 class="text-2xl mb-2">Do's and Don'ts</h2>
-          <p class="text-xl">Yes:</p>
+          <p class="text-xl mb-2">Yes:</p>
           <ul>
             <li><i class="fas fa-square-check"></i> Draw without asking first</li>
             <li><i class="fas fa-square-check"></i> Pride art</li>
             <li><i class="fas fa-square-check"></i> Design changes</li>
             <li><i class="fas fa-square-check"></i> Body swap (humans/humanoid)</li>
           </ul>
-          <p class="text-xl">No:</p>
+          <p class="text-xl mb-2">No:</p>
           <ul>
             <li><i class="fas fa-square-xmark"></i> NSFW, any and all kinds</li>
             <li><i class="fas fa-square-xmark"></i> Fetish/kink art</li>
             <li><i class="fas fa-square-xmark"></i> Gore of any kind</li>
           </ul>
+          <h2 class="text-2xl my-2">Example art</h2>
+          <div id="art">
+            <section>
+              <div id="art-container">
+                <a id="art-link" href="#" target="_blank" title="Loading..." referrerpolicy="no-referrer">
+                  <img id="art-image" class="w-auto max-h-96 mb-4 rounded-lg shadow-lg" alt="Artwork" loading="eager" />
+                </a>
+                <p id="artist-name" class="text-lg font-semibold"></p>
+                <p id="art-description" class="text-sm"></p>
+                <div class="mt-4">
+                  <button id="next-art-button" class="bg-blue-500 shadow-lg text-white py-2 px-4 w-32 rounded-xl hover:bg-blue-600 transition duration-300">Next</button>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
       <section id="quick-facts" class="w-full h-full lg:w-1/4 mb-8">
@@ -81,5 +96,6 @@
       </section>
     </main>
     <script defer type="module" src="/src/scripts/index.js"></script>
+    <script defer type="module" src="/src/scripts/artDisplay.js"></script>
   </body>
 </html>
