@@ -1,4 +1,3 @@
-import { ViteMinifyPlugin } from 'vite-plugin-minify'
 import { resolve } from 'path'
 
 export default {
@@ -6,7 +5,6 @@ export default {
     outDir: 'dist',
     base: '/',
     minify: 'esbuild',
-    cssMinify: 'lightningcss',
     sourcemap: 'true',
     rollupOptions: {
       input: {
@@ -21,7 +19,4 @@ export default {
       },
     },
   },
-  plugins: [
-    ViteMinifyPlugin(),
-  ],
 };
