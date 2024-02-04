@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const startTime = performance.now();
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        loader.style.display = "none";
+        const endTime = performance.now();
+        const elapsedTime = endTime - startTime;
+        console.log(`Page loaded in ${elapsedTime} ms`);
+      });
+    </script>
+
     <title>My Crypto Wallets</title>
+
+    <!-- other things to load -->
     <link rel="stylesheet" href="/src/css/tailwind.css" />
     <link rel="stylesheet" href="/src/css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/img/3kh0.webp" />
+    <link rel="shortcut icon" href="/img/3kh0.webp" />
+
+    <!-- base meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="List of my crypto wallets for payments, donations, or stalking my transactions" />
+    <meta name="keywords" content="Echo, personal site, 3kh0, programming, hacking, furry" />
+    <meta name="author" content="Echo" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#22c55e" />
+
+    <!-- open graph meta tags -->
+    <meta property="og:title" content="3kh0.net" />
+    <meta property="og:description" content="List of my crypto wallets for payments, donations, or stalking my transactions" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://3kh0.net/" />
+    <meta property="og:image" content="https://3kh0.net/img/3kh0.webp" />
+    <meta property="og:image:alt" content="Echo's Avatar" />
+    <meta property="og:site_name" content="Echo's Site" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="3kh0.net" />
   </head>
   <body class="bg-gray-900 text-white font-sans">
+    <div id="loader" class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-white z-50">
+      <div class="animate-spin rounded-full h-32 w-32"></div>
+    </div>
     <div id="header"></div>
     <main class="max-w-6xl mx-auto mt-10 px-4">
       <h2 class="text-3xl mb-4">My Crypto Wallets</h2>
@@ -100,7 +137,9 @@
               </h3>
               <div class="mt-2">
                 <p class="text-sm text-gray-300">
-                  Ethereum gas fees are very high right now. Use Base to send ETH and ERC-20 tokens for much lower fees and faster confirmations. If you do use Base, don't send WETH, ERC-20s, or NFTs, or it may result in a loss of funds. In rare cases, extremely large deposits or deposits made during periods of high activity may be subject to a delay of up to 7 days. I HIGHLY recommend you use a differency currency. If you are unsure, send a small amount first to test.
+                  Ethereum gas fees are very high right now. Use Base to send ETH and ERC-20 tokens for much lower fees and faster confirmations. If you do use Base, don't send WETH, ERC-20s, or NFTs, or it may result in a loss of funds. In
+                  rare cases, extremely large deposits or deposits made during periods of high activity may be subject to a delay of up to 7 days. I HIGHLY recommend you use a differency currency. If you are unsure, send a small amount
+                  first to test.
                 </p>
               </div>
               <button type="button" onclick="toggleModal('eth-info')" class="w-full inline-flex justify-center rounded-lg shadow-sm mt-4 px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 sm:m-2 sm:w-auto sm:text-sm">
@@ -119,7 +158,8 @@
               </h3>
               <div class="mt-2">
                 <p class="text-sm text-gray-300">
-                  This address can receive native and bridged USDC from the Polygon network. Don't send USDC from other networks or it may result in a loss of funds. In rare cases, extremely large deposits or deposits made during periods of high activity may be subject to a delay of up to a few hours. If you are unsure, send a small amount first to test.
+                  This address can receive native and bridged USDC from the Polygon network. Don't send USDC from other networks or it may result in a loss of funds. In rare cases, extremely large deposits or deposits made during periods of
+                  high activity may be subject to a delay of up to a few hours. If you are unsure, send a small amount first to test.
                 </p>
               </div>
               <button type="button" onclick="toggleModal('usdc-info')" class="w-full inline-flex justify-center rounded-lg shadow-sm mt-4 px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 sm:m-2 sm:w-auto sm:text-sm">
