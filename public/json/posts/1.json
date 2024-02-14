@@ -1,5 +1,0 @@
-{
-  "title": "Hello world!",
-  "content": "<p>Finnally! I am done with this, I am sure I made it in a very overcomplicated way and there are more eaiser ways of doing this, but I do not care, and I like this method.</p><p class='py-2'>Here is how the blog works:</p><p>The posts are fetched from a JSON file, which is located in the json folder. The JSON file the posts, each with a ID, title, and a short description. Then when you click on 'Read more' button, it sends another request for the actual content of the post, this is stored in json/posts by the actual ID of the selected post. It will open a nice little window, with said blog post. You can scroll within the popup to read the entire blog post. Plus, the entire page will not scroll with you. To close the popup, click on the cute 'X' button at the top-right corner.</p><p class='py-2'>With this funny little blog, I can now ramble about whatever I want! Yay!</p>",
-  "timestamp": 1698618377
-}
