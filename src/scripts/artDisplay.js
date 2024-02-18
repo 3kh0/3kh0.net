@@ -28,7 +28,7 @@ let artData = [
   {
     image: "/img/art/echo_autism.webp",
     fullRes: "/img/art/echo_autism.png",
-    artist: "Art from <a class='text-lg font-semibold text-blue-500' href='https://toyhou.se/Belonmelon' target='_blank'>Belonmelon</a>",
+    artist: "Request from <a class='text-lg font-semibold text-blue-500' href='https://toyhou.se/Belonmelon' target='_blank'>Belonmelon</a>",
     description: "Wie cool ist das bitte? Jetzt zocke ich Fortnite und trinke Cola! YIPPEE!",
     hoverText: "it looks so stupid yet so good at the same time xd",
   },
@@ -56,9 +56,16 @@ let artData = [
   {
     image: "/img/art/Palestine_support.webp",
     fullRes: "/img/art/Palestine_support.png",
-    artist: "Request from <a class='text-lg font-semibold text-blue-500' href='https://linktr.ee/pup.dagger' target='_blank'>@pup.dagger</a> with lines by Pulex",
+    artist: "Comission from <a class='text-lg font-semibold text-blue-500' href='https://linktr.ee/pup.dagger' target='_blank'>@pup.dagger</a> with lines by Pulex",
     description: "I support human rights for Palestine. Donate US Campaign for Palestinian Rights at <a class='text-blue-500' href='https://uscpr.org/' target='_blank'>uscpr.org</a>",
     hoverText: "",
+  },
+  {
+    image: "/img/art/borbdraws.webp",
+    fullRes: "/img/art/borbdraws.png",
+    artist: "Request from <a class='text-lg font-semibold text-blue-500' href='https://www.instagram.com/bogusborb' target='_blank'>bogusborb</a>",
+    description: "Very epic drawing from a very epic artist!",
+    hoverText: "Hello chat :3",
   }
 ];
 
