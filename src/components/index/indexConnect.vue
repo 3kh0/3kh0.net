@@ -9,6 +9,11 @@
           </router-link>
         </div>
         <div>
+          <a referrerpolicy="no-referrer" href="https://signal.me/#eu/JWxQvPG0KRZgv7nqL4S-D8f4aLq0yTb9NMtuUGQh_b8nT94xANBIJ5v8ghIEEbw1" target="_blank">
+            <button class="bg-blue-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-600 transition duration-300 w-full"><i class="fab fa-signal-messenger fa-lg"></i> Signal</button>
+          </a>
+        </div>
+        <div>
           <a referrerpolicy="no-referrer" href="https://discord.com/users/1056383394470182922" target="_blank">
             <button class="bg-blue-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full"><i class="fab fa-discord fa-lg"></i> Discord</button>
           </a>
@@ -76,11 +81,6 @@
         <div>
           <a referrerpolicy="no-referrer" href="https://ftp.3kh0.net" target="_blank">
             <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-server fa-lg"></i> File server</button>
-          </a>
-        </div>
-        <div>
-          <a referrerpolicy="no-referrer" href="https://kasm.3kh0.net" target="_blank">
-            <button class="bg-blue-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-600 transition duration-300 w-full"><i class="fas fa-desktop fa-lg"></i> Kasm server</button>
           </a>
         </div>
       </div>
