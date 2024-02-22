@@ -16,7 +16,7 @@
         extraPages: [
           { url: "aboutblank", title: "About Blank", desc: "About blank embedder tool" },
           { url: "index", title: "Index", desc: "This silly page" },
-          { url: "iplist", title: "IP List", desc: "Hackers telling me my IP after I forgot it:" },
+          { url: "browserinfo", title: "Browser info", desc: "Hackers telling me my info after I forgot it:" },
           { url: "urlopen", title: "URL Direct", desc: "Page opener tool (useful for kiosk exploits)" },
           { url: "crypto", title: "Crypto Wallets", desc: "My crypto wallets, in case I forget them?" },
           { url: "fursona-ref", title: "Fursona Reference", desc: "Details about my fursona for artists or anyone really" },
