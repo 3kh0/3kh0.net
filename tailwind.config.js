@@ -2,8 +2,8 @@
 export default {
   content: [
     "./index.html",
-    "./extra/*.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./*.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -21,3 +21,4 @@ export default {
     require('tailwindcss-textshadow')
   ],
 }
+
