@@ -42,7 +42,7 @@ let artData = [
     image: "/img/xmr_hoodie.webp",
     fullRes: "/img/xmr_hoodie.png",
     artist: "Comission from <a class='text-lg font-semibold text-blue-500' href='https://twitter.com/crispies_art' target='_blank'>crisspiess</a>",
-    description: "Never paid taxes on my crypto, and I never will!",
+    description: "Taxes on crypto? Never head of it!",
     hoverText: "Why do he be dripping with that hoodie doe?",
   },
   {
