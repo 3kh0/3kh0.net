@@ -8,7 +8,7 @@
       </p>
     </section>
     <div id="john" class="flex justify-center items-center p-4">
-      <iframe id="johnFrame" title="Johnvertisement" src="https://john.citrons.xyz/embed?ref=3kh0.net" class="w-full max-w-[732px] h-[94px] border-none"></iframe>
+      <iframe id="johnFrame" title="Johnvertisement" src="https://john.citrons.xyz/embed?ref=3kh0.net" class="w-full max-w-[732px] h-[94px] border-none" loading="lazy"></iframe>
     </div>
   </div>
 </template>
