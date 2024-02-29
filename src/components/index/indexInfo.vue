@@ -212,7 +212,7 @@
           </a>
         </div>
         <div>
-          <a referrerpolicy="no-referrer" href="https://t.me/echoontop" target="_blank">
+          <a referrerpolicy="no-referrer" href="https://t.me/echo_loaf" target="_blank">
             <button class="bg-blue-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full"><i class="fab fa-telegram fa-lg"></i> Telegram</button>
           </a>
         </div>
