@@ -182,9 +182,9 @@
           </router-link>
         </div>
         <div>
-          <a referrerpolicy="no-referrer" href="https://signal.me/#eu/JWxQvPG0KRZgv7nqL4S-D8f4aLq0yTb9NMtuUGQh_b8nT94xANBIJ5v8ghIEEbw1" target="_blank">
+          <router-link to="/signal">
             <button class="bg-blue-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-600 transition duration-300 w-full"><i class="fab fa-signal-messenger fa-lg"></i> Signal</button>
-          </a>
+          </router-link>
         </div>
         <div>
           <a referrerpolicy="no-referrer" href="https://discord.com/users/1056383394470182922" target="_blank">
