@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // Import pages here
 import index from "./views/index.vue";
+import signal from "./views/signal.vue";
 import notFound from "./views/notFound.vue";
 // extra pages here
 import extraIndex from "./views/extraIndex.vue";
@@ -14,6 +15,7 @@ import urlopen from "./views/urlopen.vue";
 const routes = [
   // system pages
   { path: "/", component: index, meta: { title: 'Welcome to 3kh0.net' } },
+  { path: "/signal", component: signal, meta: { title: 'Signal | 3kh0' } },
   // extra pages
   { path: "/extra", component: extraIndex, meta: { title: 'Extra Index | 3kh0' } },
   { path: "/extra/index", component: extraIndex, meta: { title: 'Extra Index | 3kh0' } },
