@@ -130,7 +130,7 @@
             <p class="text-sm">Chess bot to highlight the best moves</p>
           </div>
         </a>
-        <a referrerpolicy="no-referrer" href="https://codeberg.org/3kh0/3kh0-Assets">
+        <a referrerpolicy="no-referrer" href="https://gitlab.com/3kh0/3kh0-assets">
           <div class="bg-gray-700 p-4 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300">
             <h3 class="text-xl font-semibold mb-2">3kh0 Assets</h3>
             <p class="text-sm">Tons of game files for free use</p>
