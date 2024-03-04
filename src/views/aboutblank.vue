@@ -1,29 +1,3 @@
-<script>
-export default {
-  methods: {
-    createPage() {
-      var url = document.getElementById("url-target");
-      if (url.value.substring(0, 8) !== "https://" && url.value.substring(0, 7) !== "http://") {
-        url.value = "https://" + url.value.split("https://").pop();
-      } else if (url.value.substring(0, 7) == "http://") {
-        url.value = "https://" + url.value.split("http://").pop();
-      }
-      var win = window.open();
-      win.document.body.style.margin = "0";
-      win.document.body.style.height = "100vh";
-      var frm = win.document.createElement("iframe");
-      frm.style.border = "none";
-      frm.style.width = "100%";
-      frm.style.height = "100%";
-      frm.style.margin = "0";
-      frm.referrerpolicy = "no-referrer";
-      frm.allow = "fullscreen";
-      frm.src = url.value;
-      win.document.body.appendChild(frm);
-    },
-  },
-};
-</script>
 <template>
   <main class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl mb-4">About Blank</h2>
@@ -33,6 +7,11 @@ export default {
       <button class="console-button bg-red-500 hover:bg-red-700 transition duration-300 text-white py-2 px-4 rounded-xl ml-4 focus:outline-none focus:shadow-outline" onclick="document.getElementById('url-target').value = ''">
         <i class="fas fa-trash"></i> Clear input
       </button>
+    </div>
+    <div class="tip-section mt-6 bg-blue-500 p-4 rounded-lg" role="note">
+      <p class="font-bold text-lg"><i class="fas fa-info-circle text-white mr-2"></i>Info:</p>
+      <p>For extra security, put this page in the embedder so extensions can not see you using this tool. This tool does not always unblock pages, it just makes it so extensions can not interfere with them. Some pages will not work due to Content Security Policies, <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src" class="text-white underline">Learn more</a>.</p>
+      <p></p>
     </div>
   </main>
 </template>
