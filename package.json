@@ -19,7 +19,7 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.4",
-    "vite-plugin-pwa": "^0.19.0",
+    "vite-plugin-pwa": "^0.19.2",
     "vite-plugin-sitemap": "^0.5.3"
   }
 }
