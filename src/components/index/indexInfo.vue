@@ -1,10 +1,10 @@
 <script>
-  import { nextArt } from "/src/scripts/artDisplay.js";
+  import { nextArt, updateArtDisplay } from "/src/scripts/artDisplay.js";
+
   export default {
-    async mounted() {
-      const module = await import("/src/scripts/artDisplay.js");
+    mounted() {
       document.getElementById("next-art-button").addEventListener("click", nextArt);
-      module.updateArtDisplay();
+      updateArtDisplay();
     },
   };
 </script>
