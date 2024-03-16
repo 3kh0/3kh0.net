@@ -19,7 +19,7 @@
         </div>
         <div class="mx-10 flex items-center justify-center">
           <div>
-            <img loading="eager" src="/img/cutout2echo.webp" alt="fox" class="w-full h-auto rounded-3xl" />
+            <img loading="eager" src="/img/art/cutout2echo.webp" alt="fox" class="w-full h-auto rounded-3xl" />
           </div>
         </div>
       </div>
