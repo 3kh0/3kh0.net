@@ -15,7 +15,7 @@ export default defineConfig({
   plugins: [
     vue(),
     VitePWA({
-      includeAssets: ['img/*.*'],
+      includeAssets: ['img/*.*', 'img/crypto/*.*'],
       registerType: 'autoUpdate',
       manifest: {
         name: '3kh0.net',
