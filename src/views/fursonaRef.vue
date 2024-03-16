@@ -60,8 +60,8 @@
         <h2 class="text-2xl mb-2">Echo</h2>
         <div class="grid grid-cols-1 gap-4">
           <div>
-            <a href="/img/xmr_hoodie.png" target="_blank">
-              <img src="/img/xmr_hoodie.webp" alt="Fursona Image" class="w-full h-auto rounded-lg mx-auto" />
+            <a href="/img/art/xmr_hoodie.png" target="_blank">
+              <img src="/img/art/xmr_hoodie.webp" alt="Fursona Image" class="w-full h-auto rounded-lg mx-auto" />
             </a>
           </div>
           <div>
