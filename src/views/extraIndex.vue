@@ -20,6 +20,7 @@
           { url: "/extra/urlopen", title: "URL Direct", desc: "Page opener tool (useful for kiosk exploits)" },
           { url: "/extra/crypto", title: "Crypto Wallets", desc: "My crypto wallets, in case I forget them?" },
           { url: "/extra/fursona-ref", title: "Fursona Reference", desc: "Details about my fursona for artists or anyone really" },
+          { url : "/extra/cryptoqr", title: "Crypto QR Code Generator", desc: "Generate good looking QR codes for your wallets" },
           { url: "/signal", title: "Signal", desc: "Contact me on Signal" },
         ],
       };

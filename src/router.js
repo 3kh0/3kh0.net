@@ -11,6 +11,7 @@ import crypto from "./views/crypto.vue";
 import aboutblank from "./views/aboutblank.vue";
 import browserInfo from "./views/browserInfo.vue";
 import urlopen from "./views/urlopen.vue";
+import cryptoqr from "./views/cryptoqr.vue";
 
 const routes = [
   // system pages
@@ -24,6 +25,7 @@ const routes = [
   { path: "/extra/aboutblank", component: aboutblank, meta: { title: 'about:blank embedder | 3kh0' } },
   { path: "/extra/browserinfo", component: browserInfo, meta: { title: 'What is my IP? | 3kh0' } },
   { path: "/extra/urlopen", component: urlopen, meta: { title: 'URL Opener | 3kh0' } },
+  { path: "/extra/cryptoqr", component: cryptoqr, meta: { title: 'Crypto QR Code Generator | 3kh0' } },
   // catch-all route
   { path: "/:pathMatch(.*)*", component: notFound, meta: { title: '404 Error | 3kh0' } },
 ];
