@@ -1,5 +1,5 @@
 <template>
-  <div id="header">
+  <div id="header" class="w-full">
     <div v-if="isUnofficial" class="bg-red-500 text-white text-center py-2 rounded-lg max-w-6xl mx-auto m-2">
       <i class="fas fa-triangle-exclamation"></i> Warning: You are using an unofficial version of the site. The real site is at <a href="https://3kh0.net" class="underline">3kh0.net</a>
     </div>

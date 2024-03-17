@@ -25,7 +25,6 @@
     });
   });
 </script>
-
 <template>
   <div v-if="isLoading" id="loader" class="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-gray-900 z-50">
     <div class="w-32 h-32 border-8 border-green-500 border-t-transparent rounded-full animate-spin" v-if="!loadError"></div>
@@ -41,7 +40,6 @@
   <router-view />
   <siteFooter />
 </template>
-
 <style>
   @keyframes spin {
     0% {
