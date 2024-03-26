@@ -175,7 +175,7 @@
   <div id="connect">
     <section class="max-w-6xl mx-auto p-8">
       <h2 class="text-3xl mb-4">Stalk me everywhere</h2>
-      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center place-content-evenly">
         <div>
           <router-link to="mailto:echo-the-coder@tuta.io" target="_blank">
             <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-envelope fa-lg"></i> Email</button>
@@ -185,6 +185,11 @@
           <router-link to="/signal">
             <button class="bg-blue-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-600 transition duration-300 w-full"><i class="fab fa-signal-messenger fa-lg"></i> Signal</button>
           </router-link>
+        </div>
+        <div>
+          <a referrerpolicy="no-referrer" href="https://t.me/echo_loaf" target="_blank">
+            <button class="bg-blue-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full"><i class="fab fa-telegram fa-lg"></i> Telegram</button>
+          </a>
         </div>
         <div>
           <a referrerpolicy="no-referrer" href="https://discord.com/users/1056383394470182922" target="_blank">
@@ -202,18 +207,23 @@
           </a>
         </div>
         <div>
+          <a referrerpolicy="no-referrer" href="https://localmonero.co/user/3kh0_" target="_blank">
+            <button class="bg-blue-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-600 transition duration-300 w-full"><i class="fab fa-monero fa-lg"></i> LocalMonero</button>
+          </a>
+        </div>
+        <div>
           <a referrerpolicy="no-referrer" href="https://github.com/3kh0" target="_blank">
             <button class="bg-black text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-gray-800 transition duration-300 w-full"><i class="fab fa-github fa-lg"></i> GitHub</button>
           </a>
         </div>
         <div>
-          <a referrerpolicy="no-referrer" href="https://odysee.com/@3kh0:a" target="_blank">
-            <button class="bg-red-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-red-700 transition duration-300 w-full"><i class="fa-brands fa-odysee fa-lg"></i> Odysee</button>
+          <a referrerpolicy="no-referrer" href="https://cash.app/$3kh0live" target="_blank">
+            <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-dollar-sign fa-lg"></i> Cash App</button>
           </a>
         </div>
         <div>
-          <a referrerpolicy="no-referrer" href="https://t.me/echo_loaf" target="_blank">
-            <button class="bg-blue-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-700 transition duration-300 w-full"><i class="fab fa-telegram fa-lg"></i> Telegram</button>
+          <a referrerpolicy="no-referrer" href="https://odysee.com/@3kh0:a" target="_blank">
+            <button class="bg-red-600 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-red-700 transition duration-300 w-full"><i class="fa-brands fa-odysee fa-lg"></i> Odysee</button>
           </a>
         </div>
         <div>
@@ -253,7 +263,7 @@
         </div>
         <div>
           <a referrerpolicy="no-referrer" href="https://ftp.3kh0.net" target="_blank">
-            <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-server fa-lg"></i> File server</button>
+            <button class="bg-blue-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-server fa-lg"></i> File server</button>
           </a>
         </div>
       </div>
