@@ -177,9 +177,9 @@
       <h2 class="text-3xl mb-4">Stalk me everywhere</h2>
       <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center place-content-evenly">
         <div>
-          <router-link to="mailto:echo-the-coder@tuta.io" target="_blank">
+          <a href="mailto:echo-the-coder@tuta.io" target="_blank">
             <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-envelope fa-lg"></i> Email</button>
-          </router-link>
+          </a>
         </div>
         <div>
           <router-link to="/signal">
