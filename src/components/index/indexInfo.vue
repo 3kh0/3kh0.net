@@ -175,7 +175,7 @@
   <div id="connect">
     <section class="max-w-6xl mx-auto p-8">
       <h2 class="text-3xl mb-4">Stalk me everywhere</h2>
-      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center place-content-evenly">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div>
           <a href="mailto:echo-the-coder@tuta.io" target="_blank">
             <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-envelope fa-lg"></i> Email</button>
@@ -207,18 +207,8 @@
           </a>
         </div>
         <div>
-          <a referrerpolicy="no-referrer" href="https://localmonero.co/user/3kh0_" target="_blank">
-            <button class="bg-blue-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-blue-600 transition duration-300 w-full"><i class="fab fa-monero fa-lg"></i> LocalMonero</button>
-          </a>
-        </div>
-        <div>
           <a referrerpolicy="no-referrer" href="https://github.com/3kh0" target="_blank">
             <button class="bg-black text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-gray-800 transition duration-300 w-full"><i class="fab fa-github fa-lg"></i> GitHub</button>
-          </a>
-        </div>
-        <div>
-          <a referrerpolicy="no-referrer" href="https://cash.app/$3kh0live" target="_blank">
-            <button class="bg-green-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-green-600 transition duration-300 w-full"><i class="fas fa-dollar-sign fa-lg"></i> Cash App</button>
           </a>
         </div>
         <div>
