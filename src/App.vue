@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, onMounted } from "vue";
+  import { ref, onMounted, watchEffect } from "vue";
   import { useRoute } from "vue-router";
   import siteHeader from "./components/siteHeader.vue";
   import siteFooter from "./components/siteFooter.vue";
