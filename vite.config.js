@@ -1,6 +1,7 @@
 import vue from '@vitejs/plugin-vue'
 import Sitemap from 'vite-plugin-sitemap'
 import { defineConfig } from 'vite'
+import { createHtmlPlugin } from 'vite-plugin-html'
 import { join, parse, resolve } from "path";
 
 // Define your entry points
@@ -13,6 +14,9 @@ const dynamicRoutes = Object.keys(entryPoints).map(key => `/${key}`);
 export default defineConfig({
   plugins: [
     vue(),
+    createHtmlPlugin({
+      minify: true,
+    }),
     Sitemap({
       hostname: 'https://3kh0.net/',
       lastmod: new Date(),
