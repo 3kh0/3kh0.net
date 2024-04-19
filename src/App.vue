@@ -7,14 +7,14 @@
   const route = useRoute();
 
   watchEffect(() => {
-    document.title = route.meta.title || "Default Title";
+    document.title = route.meta.title || "3kh0.net";
     let metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", route.meta.description || "Default Description");
+      metaDescription.setAttribute("content", route.meta.description || "I am Echo, programmer, hacker, and furry. Welcome to my personal website! :D");
     } else {
       let meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = route.meta.description || "Default Description";
+      meta.content = route.meta.description || "I am Echo, programmer, hacker, and furry. Welcome to my personal website! :D";
       document.getElementsByTagName("head")[0].appendChild(meta);
     }
   });

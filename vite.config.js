@@ -4,10 +4,7 @@ import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import { join, parse, resolve } from "path";
 
-// Define your entry points
 const entryPoints = getEntryPoints("index.html");
-
-// Transform the entry points into route paths
 const dynamicRoutes = Object.keys(entryPoints).map(key => `/${key}`);
 
 // https://vitejs.dev/config/
