@@ -1,7 +1,23 @@
 <script setup>
   import { ref, onMounted } from "vue";
+  import { useRoute } from "vue-router";
   import siteHeader from "./components/siteHeader.vue";
   import siteFooter from "./components/siteFooter.vue";
+
+  const route = useRoute();
+
+  watchEffect(() => {
+    document.title = route.meta.title || "Default Title";
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", route.meta.description || "Default Description");
+    } else {
+      let meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = route.meta.description || "Default Description";
+      document.getElementsByTagName("head")[0].appendChild(meta);
+    }
+  });
 
   const isLoading = ref(true);
   const loadError = ref(false);
