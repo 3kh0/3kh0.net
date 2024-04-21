@@ -66,7 +66,7 @@
           {
             name: "Tron (TRX)",
             img: "trx",
-            address: "0x4a31EBD5A93334ba99CAE15dd1411c7a3E0214B6",
+            address: "TDYkJGxgwS4N3u1arahKnUANRmwX3rsK1G",
             explorerLink: "https://tronscan.org/#/address/",
           },
         ],
