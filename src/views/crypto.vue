@@ -22,12 +22,6 @@
             explorerLink: "https://xmrchain.net/search?value=",
           },
           {
-            name: "USD Coin (USDC)",
-            img: "usdc",
-            address: "0x4a31EBD5A93334ba99CAE15dd1411c7a3E0214B6",
-            explorerLink: "https://polygonscan.com/address/",
-          },
-          {
             name: "Bitcoin (BTC)",
             img: "btc",
             address: "33WimAtvLLmEREJBUS2wc8ev7tjmzCU2Mq",
@@ -40,16 +34,22 @@
             explorerLink: "https://etherscan.io/address/",
           },
           {
+            name: "Polygon (MATIC)",
+            img: "matic",
+            address: "0x4a31EBD5A93334ba99CAE15dd1411c7a3E0214B6",
+            explorerLink: "https://polygonscan.com/address/",
+          },
+          {
             name: "Litecoin (LTC)",
             img: "ltc",
-            address: "MSiBQ181HZVPKtz9cTf9VHz7DEuEc5Jm9r",
+            address: "ltc1q4nwfd39gwgh57ylj0qlwahnfjnl3v5anrdjtex",
             explorerLink: "https://explorer.litecoin.net/address/",
           },
           {
-            name: "Tether (USDT)",
-            img: "usdt",
-            address: "0x4a31EBD5A93334ba99CAE15dd1411c7a3E0214B6",
-            explorerLink: "https://www.okx.com/explorer/usdt/address/",
+            name: "Bitcoin Cash (BCH)",
+            img: "bch",
+            address: "qp2l3dp5adgy375t9pgeptw0cul2nw65pys295gzun",
+            explorerLink: "https://explorer.bitcoin.com/bch/address/",
           },
           {
             name: "Solana (SOL)",
@@ -68,7 +68,7 @@
             img: "trx",
             address: "TDYkJGxgwS4N3u1arahKnUANRmwX3rsK1G",
             explorerLink: "https://tronscan.org/#/address/",
-          },
+          }
         ],
       };
     },
