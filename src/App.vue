@@ -39,6 +39,11 @@
       clearTimeout(timer);
       isLoading.value = false;
     });
+    let script = document.createElement('script');
+    script.defer = true;
+    script.dataset.domain = "3kh0.net";
+    script.src = "https://plausible.io/js/script.js";
+    document.head.appendChild(script);
   });
 </script>
 <template>
