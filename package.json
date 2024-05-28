@@ -22,6 +22,6 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.11",
-    "vite-plugin-sitemap": "^0.5.3"
+    "vite-plugin-sitemap": "^0.6.2"
   }
 }
