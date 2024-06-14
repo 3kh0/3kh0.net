@@ -202,7 +202,7 @@
           </a>
         </div>
         <div>
-          <a rel="me" href="https://defcon.social/@3kh0" target="_blank">
+          <a rel="me" href="https://grimgreenfo.rest/@echo" target="_blank">
             <button class="bg-purple-500 text-white text-lg shadow-lg py-2 px-4 rounded-xl hover:bg-purple-600 transition duration-300 w-full"><i class="fab fa-mastodon fa-lg"></i> Mastodon</button>
           </a>
         </div>
