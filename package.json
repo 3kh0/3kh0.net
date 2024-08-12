@@ -20,7 +20,7 @@
     "@vitejs/plugin-vue": "^5.1.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.7",
+    "tailwindcss": "^3.4.9",
     "vite": "^5.3.5",
     "vite-plugin-sitemap": "^0.7.1"
   }
