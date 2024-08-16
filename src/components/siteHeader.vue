@@ -3,6 +3,9 @@
     <div v-if="isUnofficial" class="bg-red-500 text-white text-center py-2 rounded-lg max-w-6xl mx-auto m-2">
       <i class="fas fa-triangle-exclamation"></i> Warning: You are using an unofficial version of the site. The real site is at <a href="https://3kh0.net" class="underline">3kh0.net</a>
     </div>
+    <div class="bg-blue-500 text-white text-center py-2 rounded-lg max-w-5xl mx-auto m-2">
+      <i class="fas fa-clock"></i> This website is quite old and some information is outdated. I am working on a new version, but it's not ready yet.
+    </div>
     <header class="py-4 px-8 flex flex-col sm:flex-row justify-between items-center max-w-6xl mx-auto">
       <div class="text-center sm:text-left mb-4 sm:mb-0 w-full sm:w-auto">
         <router-link to="/" class="">
